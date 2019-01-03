@@ -12,6 +12,7 @@ gem 'faraday'
 gem 'figaro'
 gem 'geocoder'
 gem 'thin'
+gem 'fast_jsonapi'
 
 
 
