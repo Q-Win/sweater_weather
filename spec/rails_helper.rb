@@ -15,6 +15,7 @@ require 'simplecov'
 SimpleCov.start
 
 VCR.configure do |config|
+  allow_http_connections_when_no_cassette = true
   config.ignore_localhost = true
   config.cassette_library_dir = 'spec/cassettes'
   config.hook_into :webmock
