@@ -13,7 +13,7 @@ describe "gif request" do
       expect(gif).to be_a(Hash)
       expect(gif["data"]).to be_a(Array)
       expect(gif["data"][0]["attributes"]["summary"]).to eq("Partly cloudy overnight.")
-      expect(gif["data"][1]["attributes"]["url"]).to eq("https://giphy.com/gifs/JIX9t2j0ZTN9S")
+      expect(gif["data"][1]["attributes"]["url"]).to eq("https://giphy.com/gifs/dark-castle-63xBFHKNVjZlu")
     end
   end
 end

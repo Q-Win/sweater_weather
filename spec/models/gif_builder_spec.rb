@@ -11,7 +11,7 @@ describe GifBuilder do
     VCR.use_cassette("daily_forecast_cassette") do
       forecast = GifBuilder.new("Denver")
       expect(forecast.get_summaries_of_forcast).to be_a(Array)
-      expect(forecast.get_summaries_of_forcast[0]).to eq("Partly cloudy until afternoon.")
+      expect(forecast.get_summaries_of_forcast[0]).to eq("Partly cloudy overnight.")
       expect(forecast.get_summaries_of_forcast.count).to eq(8)
     end
   end
