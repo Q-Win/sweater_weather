@@ -21,11 +21,6 @@ class GifBuilder
   def forecast
     daily[:data].map do |day|
       ForecastGifs.new(day[:time], day[:summary], giphy_service.return_gif_url(day[:summary]))
-      # hash = Hash.new
-      # hash[:time] = day[:time]
-      # hash[:summary] = day[:summary]
-      # hash[:url] = giphy_service.return_gif_url(day[:summary])
-      # hash
     end
   end
 
