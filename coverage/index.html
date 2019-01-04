@@ -14,27 +14,27 @@
       <img src="./assets/0.10.2/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2019-01-04T10:11:02-07:00">2019-01-04T10:11:02-07:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2019-01-04T10:30:06-07:00">2019-01-04T10:30:06-07:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
         <div class="file_list_container" id="AllFiles">
   <h2>
     <span class="group_name">All Files</span>
-    (<span class="covered_percent"><span class="green">95.56%</span></span>
+    (<span class="covered_percent"><span class="green">98.41%</span></span>
      covered at
      <span class="covered_strength">
        <span class="green">
-         1.5
+         3.13
        </span>
     </span> hits/line)
   </h2>
   <a name="AllFiles"></a>
   <div>
-    <b>3</b> files in total.
-    <b>45</b> relevant lines. 
-    <span class="green"><b>43</b> lines covered</span> and
-    <span class="red"><b>2</b> lines missed </span>
+    <b>4</b> files in total.
+    <b>63</b> relevant lines. 
+    <span class="green"><b>62</b> lines covered</span> and
+    <span class="red"><b>1</b> lines missed </span>
   </div>
   <table class="file_list">
     <thead>
@@ -52,12 +52,12 @@
       
       <tr>
         <td class="strong"><a href="#47a0a95bafba1c177f6410724bd3bfd9dc5ea726" class="src_link" title="app/models/gif_builder.rb">app/models/gif_builder.rb</a></td>
-        <td class="green strong">91.3 %</td>
-        <td>47</td>
-        <td>23</td>
-        <td>21</td>
-        <td>2</td>
-        <td>1.8</td>
+        <td class="green strong">96.67 %</td>
+        <td>57</td>
+        <td>30</td>
+        <td>29</td>
+        <td>1</td>
+        <td>3.7</td>
       </tr>
       
       <tr>
@@ -67,7 +67,17 @@
         <td>9</td>
         <td>9</td>
         <td>0</td>
-        <td>1.0</td>
+        <td>1.4</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#f48630327097efa8f213793a01acadb66234eb9d" class="src_link" title="app/services/giphy_service.rb">app/services/giphy_service.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>24</td>
+        <td>11</td>
+        <td>11</td>
+        <td>0</td>
+        <td>4.2</td>
       </tr>
       
       <tr>
@@ -77,7 +87,7 @@
         <td>13</td>
         <td>13</td>
         <td>0</td>
-        <td>1.3</td>
+        <td>2.1</td>
       </tr>
       
     </tbody>
@@ -99,11 +109,11 @@
         <div class="source_table" id="47a0a95bafba1c177f6410724bd3bfd9dc5ea726">
   <div class="header">
     <h3>app/models/gif_builder.rb</h3>
-    <h4><span class="green">91.3 %</span> covered</h4>
+    <h4><span class="green">96.67 %</span> covered</h4>
     <div>
-      <b>23</b> relevant lines. 
-      <span class="green"><b>21</b> lines covered</span> and
-      <span class="red"><b>2</b> lines missed.</span>
+      <b>30</b> relevant lines. 
+      <span class="green"><b>29</b> lines covered</span> and
+      <span class="red"><b>1</b> lines missed.</span>
     </div>
   </div>
   
@@ -128,8 +138,8 @@
           <code class="ruby">  def initialize(location)</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="4">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="3" data-linenumber="4">
+          <span class="hits">3</span>
           
           <code class="ruby">    @location = location</code>
         </li>
@@ -176,8 +186,8 @@
           <code class="ruby">  def get_forecast</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="12">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="4" data-linenumber="12">
+          <span class="hits">4</span>
           
           <code class="ruby">    @forecast ||= dark_sky_service.get_forecast_data(lat,lng)</code>
         </li>
@@ -200,14 +210,14 @@
           <code class="ruby">  def get_summaries_of_forcast</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="16">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="3" data-linenumber="16">
+          <span class="hits">3</span>
           
           <code class="ruby">    daily[:data].map do |day|</code>
         </li>
       
-        <li class="covered" data-hits="16" data-linenumber="17">
-          <span class="hits">16</span>
+        <li class="covered" data-hits="24" data-linenumber="17">
+          <span class="hits">24</span>
           
           <code class="ruby">      day[:summary]</code>
         </li>
@@ -233,49 +243,49 @@
         <li class="covered" data-hits="1" data-linenumber="21">
           <span class="hits">1</span>
           
-          <code class="ruby">  private</code>
+          <code class="ruby">  def forecast_gif_json</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="22">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="23">
+        <li class="covered" data-hits="1" data-linenumber="22">
           <span class="hits">1</span>
           
-          <code class="ruby">  def google_service</code>
+          <code class="ruby">    daily[:data].map do |day|</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="24">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="8" data-linenumber="23">
+          <span class="hits">8</span>
           
-          <code class="ruby">    GoogleService.new</code>
+          <code class="ruby">      hash = Hash.new</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="25">
+        <li class="covered" data-hits="8" data-linenumber="24">
+          <span class="hits">8</span>
           
-          
-          <code class="ruby">  end</code>
+          <code class="ruby">      hash[:time] = day[:time]</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="26">
+        <li class="covered" data-hits="8" data-linenumber="25">
+          <span class="hits">8</span>
           
-          
-          <code class="ruby"></code>
+          <code class="ruby">      hash[:summary] = day[:summary]</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="27">
-          <span class="hits">1</span>
+        <li class="covered" data-hits="8" data-linenumber="26">
+          <span class="hits">8</span>
           
-          <code class="ruby">  def lat</code>
+          <code class="ruby">      hash[:url] = giphy_service.return_gif_url(day[:summary])</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="28">
-          <span class="hits">1</span>
+        <li class="covered" data-hits="8" data-linenumber="27">
+          <span class="hits">8</span>
           
-          <code class="ruby">    google_service.latitude(@location)</code>
+          <code class="ruby">      hash</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="28">
+          
+          
+          <code class="ruby">    end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="29">
@@ -293,100 +303,160 @@
         <li class="covered" data-hits="1" data-linenumber="31">
           <span class="hits">1</span>
           
-          <code class="ruby">  def lng</code>
+          <code class="ruby">  private</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="32">
-          <span class="hits">1</span>
-          
-          <code class="ruby">    google_service.longitude(@location)</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="33">
-          
-          
-          <code class="ruby">  end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="34">
+        <li class="never" data-hits="" data-linenumber="32">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="35">
+        <li class="covered" data-hits="1" data-linenumber="33">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def google_service</code>
+        </li>
+      
+        <li class="covered" data-hits="4" data-linenumber="34">
+          <span class="hits">4</span>
+          
+          <code class="ruby">    GoogleService.new</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="35">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="36">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="37">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def lat</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="38">
+          <span class="hits">2</span>
+          
+          <code class="ruby">    google_service.latitude(@location)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="39">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="40">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="41">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def lng</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="42">
+          <span class="hits">2</span>
+          
+          <code class="ruby">    google_service.longitude(@location)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="43">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="44">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="45">
           <span class="hits">1</span>
           
           <code class="ruby">  def dark_sky_service</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="36">
-          <span class="hits">1</span>
+        <li class="covered" data-hits="2" data-linenumber="46">
+          <span class="hits">2</span>
           
           <code class="ruby">    DarkSkyService.new</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="37">
+        <li class="never" data-hits="" data-linenumber="47">
           
           
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="38">
+        <li class="never" data-hits="" data-linenumber="48">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="39">
+        <li class="covered" data-hits="1" data-linenumber="49">
           <span class="hits">1</span>
           
           <code class="ruby">  def giphy_service</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="40">
-          
+        <li class="covered" data-hits="8" data-linenumber="50">
+          <span class="hits">8</span>
           
           <code class="ruby">    GiphyService.new</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="41">
+        <li class="never" data-hits="" data-linenumber="51">
           
           
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="42">
+        <li class="never" data-hits="" data-linenumber="52">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="43">
+        <li class="covered" data-hits="1" data-linenumber="53">
           <span class="hits">1</span>
           
           <code class="ruby">  def daily</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="44">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="4" data-linenumber="54">
+          <span class="hits">4</span>
           
           <code class="ruby">    get_forecast[:daily]</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="45">
+        <li class="never" data-hits="" data-linenumber="55">
           
           
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="46">
+        <li class="never" data-hits="" data-linenumber="56">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="47">
+        <li class="never" data-hits="" data-linenumber="57">
           
           
           <code class="ruby">end</code>
@@ -435,8 +505,8 @@
           <code class="ruby">  def get_forecast_data(lat,lng)</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="5">
-          <span class="hits">1</span>
+        <li class="covered" data-hits="2" data-linenumber="5">
+          <span class="hits">2</span>
           
           <code class="ruby">    get_json(&quot;/forecast/#{ENV[&#39;DARK_SKY_API_KEY&#39;]}/#{lat},#{lng}&quot;)</code>
         </li>
@@ -471,8 +541,8 @@
           <code class="ruby">  def get_json(url)</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="11">
-          <span class="hits">1</span>
+        <li class="covered" data-hits="2" data-linenumber="11">
+          <span class="hits">2</span>
           
           <code class="ruby">    response = conn.get(url)</code>
         </li>
@@ -483,8 +553,8 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="13">
-          <span class="hits">1</span>
+        <li class="covered" data-hits="2" data-linenumber="13">
+          <span class="hits">2</span>
           
           <code class="ruby">    JSON.parse(response.body, symbolize_names: true)</code>
         </li>
@@ -507,8 +577,8 @@
           <code class="ruby">  def conn</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="17">
-          <span class="hits">1</span>
+        <li class="covered" data-hits="2" data-linenumber="17">
+          <span class="hits">2</span>
           
           <code class="ruby">    Faraday.new(url: &quot;https://api.darksky.net&quot;)</code>
         </li>
@@ -526,6 +596,169 @@
         </li>
       
         <li class="never" data-hits="" data-linenumber="20">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+
+      
+        <div class="source_table" id="f48630327097efa8f213793a01acadb66234eb9d">
+  <div class="header">
+    <h3>app/services/giphy_service.rb</h3>
+    <h4><span class="green">100.0 %</span> covered</h4>
+    <div>
+      <b>11</b> relevant lines. 
+      <span class="green"><b>11</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">class GiphyService</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="2">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="3">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="4">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def find_gif(theme)</code>
+        </li>
+      
+        <li class="covered" data-hits="8" data-linenumber="5">
+          <span class="hits">8</span>
+          
+          <code class="ruby">    get_json(&quot;/v1/gifs/search?api_key=#{ENV[&#39;GIPHY_API_KEY&#39;]}&amp;s=#{theme}&amp;q=cat&amp;limit=1&quot;)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="6">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="7">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="8">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def return_gif_url(theme)</code>
+        </li>
+      
+        <li class="covered" data-hits="8" data-linenumber="9">
+          <span class="hits">8</span>
+          
+          <code class="ruby">    find_gif(theme)[:data][0][:url]</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="10">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="11">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="12">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  private</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="13">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="14">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def get_json(url)</code>
+        </li>
+      
+        <li class="covered" data-hits="8" data-linenumber="15">
+          <span class="hits">8</span>
+          
+          <code class="ruby">    response = conn.get(url)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="16">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="8" data-linenumber="17">
+          <span class="hits">8</span>
+          
+          <code class="ruby">    JSON.parse(response.body, symbolize_names: true)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="18">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="19">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="20">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def conn</code>
+        </li>
+      
+        <li class="covered" data-hits="8" data-linenumber="21">
+          <span class="hits">8</span>
+          
+          <code class="ruby">    Faraday.new(url: &quot;http://api.giphy.com&quot;)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="22">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="23">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="24">
           
           
           <code class="ruby">end</code>
@@ -568,8 +801,8 @@
           <code class="ruby">  def longitude(location)</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="4">
-          <span class="hits">1</span>
+        <li class="covered" data-hits="2" data-linenumber="4">
+          <span class="hits">2</span>
           
           <code class="ruby">    location_data(location)[:results][0][:geometry][:location][:lng]</code>
         </li>
@@ -592,8 +825,8 @@
           <code class="ruby">  def latitude(location)</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="8">
-          <span class="hits">1</span>
+        <li class="covered" data-hits="2" data-linenumber="8">
+          <span class="hits">2</span>
           
           <code class="ruby">    location_data(location)[:results][0][:geometry][:location][:lat]</code>
         </li>
@@ -616,8 +849,8 @@
           <code class="ruby">  def location_data(location)</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="12">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="4" data-linenumber="12">
+          <span class="hits">4</span>
           
           <code class="ruby">    get_json(&quot;/maps/api/geocode/json?address=#{location}&amp;key=#{ENV[&#39;GOOGLE_API_KEY&#39;]}&quot;)</code>
         </li>
@@ -652,8 +885,8 @@
           <code class="ruby">  def get_json(url)</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="18">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="4" data-linenumber="18">
+          <span class="hits">4</span>
           
           <code class="ruby">    response = conn.get(url)</code>
         </li>
@@ -664,8 +897,8 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="20">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="4" data-linenumber="20">
+          <span class="hits">4</span>
           
           <code class="ruby">    JSON.parse(response.body, symbolize_names: true)</code>
         </li>
@@ -688,8 +921,8 @@
           <code class="ruby">  def conn</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="24">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="4" data-linenumber="24">
+          <span class="hits">4</span>
           
           <code class="ruby">    Faraday.new(url: &quot;https://maps.googleapis.com&quot;)</code>
         </li>

@@ -18,6 +18,16 @@ class GifBuilder
     end
   end
 
+  def forecast_gif_json
+    daily[:data].map do |day|
+      hash = Hash.new
+      hash[:time] = day[:time]
+      hash[:summary] = day[:summary]
+      hash[:url] = giphy_service.return_gif_url(day[:summary])
+      hash
+    end
+  end
+
   private
 
   def google_service
