@@ -19,8 +19,8 @@ describe GifBuilder do
   it 'can get summaries of the daily forecast' do
     VCR.use_cassette("forecast_gif_json_cassette") do
       forecast = GifBuilder.new("Denver")
-      result = forecast.forecast_gif_json
-   
+      result = forecast.forecast
+
       expect(result).to be_a(Array)
       expect(result.count).to eq(8)
     end
