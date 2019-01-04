@@ -8,18 +8,6 @@ class GifBuilder
     "#{@location} weather at #{Time.now}"
   end
 
-  # def currently
-  #   get_forecast[:currently]
-  # end
-  #
-  # def hourly
-  #   get_forecast[:hourly]
-  # end
-  #
-  # def daily
-  #   get_forecast[:daily]
-  # end
-
   def get_forecast
     @forecast ||= dark_sky_service.get_forecast_data(lat,lng)
   end

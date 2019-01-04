@@ -1,13 +1,13 @@
 require 'rails_helper'
 
 describe "gif request" do
-  it "sends gif data" do
+  xit "sends gif data" do
     VCR.use_cassette("gif_response_cassette") do
 
       get '/api/v1/gifs?location=denver,co'
 
       expect(response).to be_successful
-      binding.pry 
+
       gif = JSON.parse(response.body)
 
       expect(gif).to be_a(Hash)
