@@ -45,8 +45,6 @@
         2,
         null,
         null,
-        null,
-        null,
         null
       ],
       "/Users/quinnkrug/turing/3module/sweater_weather_api/spec/models/gif_builder_spec.rb": [
@@ -161,6 +159,7 @@
         null,
         1,
         2,
+        2,
         null,
         null,
         null
@@ -208,6 +207,41 @@
         1,
         1,
         1,
+        null,
+        null,
+        null
+      ],
+      "/Users/quinnkrug/turing/3module/sweater_weather_api/spec/requests/api/v1/session_spec.rb": [
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        null,
+        1,
+        null,
+        1,
+        null,
+        1,
+        null,
+        1,
+        1,
+        null,
+        null,
+        null,
+        1,
+        1,
+        1,
+        null,
+        1,
+        null,
+        1,
+        null,
+        1,
+        1,
+        null,
+        null,
         null,
         null,
         null
@@ -436,6 +470,10 @@
         1,
         1,
         null,
+        null,
+        null,
+        null,
+        null,
         null
       ],
       "/Users/quinnkrug/turing/3module/sweater_weather_api/app/serializers/daily_forecast_serializer.rb": [
@@ -443,6 +481,26 @@
         1,
         1,
         1,
+        null
+      ],
+      "/Users/quinnkrug/turing/3module/sweater_weather_api/app/controllers/api/v1/sessions_controller.rb": [
+        1,
+        null,
+        1,
+        2,
+        2,
+        1,
+        1,
+        null,
+        1,
+        null,
+        null,
+        null,
+        1,
+        null,
+        1,
+        0,
+        null,
         null
       ],
       "/Users/quinnkrug/turing/3module/sweater_weather_api/app/controllers/api/v1/users_controller.rb": [
@@ -468,6 +526,6 @@
         null
       ]
     },
-    "timestamp": 1546626790
+    "timestamp": 1546891427
   }
 }
