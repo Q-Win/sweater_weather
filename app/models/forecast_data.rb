@@ -41,6 +41,4 @@ class ForecastData
     DarkSkyService.new
   end
 
-
-
 end
