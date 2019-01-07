@@ -1,0 +1,782 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://maps.googleapis.com/maps/api/geocode/json?address=denver,co&key=AIzaSyDydLEz_KY0GMwUfV1OJOeY0-CpWDSXjRs
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Fri, 04 Jan 2019 18:32:08 GMT
+      Expires:
+      - Sat, 05 Jan 2019 18:32:08 GMT
+      Cache-Control:
+      - public, max-age=86400
+      Vary:
+      - Accept-Language
+      Access-Control-Allow-Origin:
+      - "*"
+      Server:
+      - mafe
+      Content-Length:
+      - '448'
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Frame-Options:
+      - SAMEORIGIN
+      Server-Timing:
+      - gfet4t7; dur=27
+      Alt-Svc:
+      - quic=":443"; ma=2592000; v="44,43,39,35"
+    body:
+      encoding: ASCII-8BIT
+      string: |
+        {
+           "results" : [
+              {
+                 "address_components" : [
+                    {
+                       "long_name" : "Denver",
+                       "short_name" : "Denver",
+                       "types" : [ "locality", "political" ]
+                    },
+                    {
+                       "long_name" : "Denver County",
+                       "short_name" : "Denver County",
+                       "types" : [ "administrative_area_level_2", "political" ]
+                    },
+                    {
+                       "long_name" : "Colorado",
+                       "short_name" : "CO",
+                       "types" : [ "administrative_area_level_1", "political" ]
+                    },
+                    {
+                       "long_name" : "United States",
+                       "short_name" : "US",
+                       "types" : [ "country", "political" ]
+                    }
+                 ],
+                 "formatted_address" : "Denver, CO, USA",
+                 "geometry" : {
+                    "bounds" : {
+                       "northeast" : {
+                          "lat" : 39.91424689999999,
+                          "lng" : -104.6002959
+                       },
+                       "southwest" : {
+                          "lat" : 39.614431,
+                          "lng" : -105.109927
+                       }
+                    },
+                    "location" : {
+                       "lat" : 39.7392358,
+                       "lng" : -104.990251
+                    },
+                    "location_type" : "APPROXIMATE",
+                    "viewport" : {
+                       "northeast" : {
+                          "lat" : 39.91424689999999,
+                          "lng" : -104.6002959
+                       },
+                       "southwest" : {
+                          "lat" : 39.614431,
+                          "lng" : -105.109927
+                       }
+                    }
+                 },
+                 "place_id" : "ChIJzxcfI6qAa4cR1jaKJ_j0jhE",
+                 "types" : [ "locality", "political" ]
+              }
+           ],
+           "status" : "OK"
+        }
+    http_version: 
+  recorded_at: Fri, 04 Jan 2019 18:32:08 GMT
+- request:
+    method: get
+    uri: https://maps.googleapis.com/maps/api/geocode/json?address=denver,co&key=AIzaSyDydLEz_KY0GMwUfV1OJOeY0-CpWDSXjRs
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Fri, 04 Jan 2019 18:32:08 GMT
+      Expires:
+      - Sat, 05 Jan 2019 18:32:08 GMT
+      Cache-Control:
+      - public, max-age=86400
+      Vary:
+      - Accept-Language
+      Access-Control-Allow-Origin:
+      - "*"
+      Server:
+      - mafe
+      Content-Length:
+      - '448'
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Frame-Options:
+      - SAMEORIGIN
+      Server-Timing:
+      - gfet4t7; dur=14
+      Alt-Svc:
+      - quic=":443"; ma=2592000; v="44,43,39,35"
+    body:
+      encoding: ASCII-8BIT
+      string: |
+        {
+           "results" : [
+              {
+                 "address_components" : [
+                    {
+                       "long_name" : "Denver",
+                       "short_name" : "Denver",
+                       "types" : [ "locality", "political" ]
+                    },
+                    {
+                       "long_name" : "Denver County",
+                       "short_name" : "Denver County",
+                       "types" : [ "administrative_area_level_2", "political" ]
+                    },
+                    {
+                       "long_name" : "Colorado",
+                       "short_name" : "CO",
+                       "types" : [ "administrative_area_level_1", "political" ]
+                    },
+                    {
+                       "long_name" : "United States",
+                       "short_name" : "US",
+                       "types" : [ "country", "political" ]
+                    }
+                 ],
+                 "formatted_address" : "Denver, CO, USA",
+                 "geometry" : {
+                    "bounds" : {
+                       "northeast" : {
+                          "lat" : 39.91424689999999,
+                          "lng" : -104.6002959
+                       },
+                       "southwest" : {
+                          "lat" : 39.614431,
+                          "lng" : -105.109927
+                       }
+                    },
+                    "location" : {
+                       "lat" : 39.7392358,
+                       "lng" : -104.990251
+                    },
+                    "location_type" : "APPROXIMATE",
+                    "viewport" : {
+                       "northeast" : {
+                          "lat" : 39.91424689999999,
+                          "lng" : -104.6002959
+                       },
+                       "southwest" : {
+                          "lat" : 39.614431,
+                          "lng" : -105.109927
+                       }
+                    }
+                 },
+                 "place_id" : "ChIJzxcfI6qAa4cR1jaKJ_j0jhE",
+                 "types" : [ "locality", "political" ]
+              }
+           ],
+           "status" : "OK"
+        }
+    http_version: 
+  recorded_at: Fri, 04 Jan 2019 18:32:08 GMT
+- request:
+    method: get
+    uri: https://api.darksky.net/forecast/4af644a211d32b24385f389454e38aeb/39.7392358,-104.990251
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 04 Jan 2019 18:32:08 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Authentication-Time:
+      - 19ms
+      Cache-Control:
+      - max-age=60
+      Expires:
+      - Fri, 04 Jan 2019 18:33:08 +0000
+      X-Forecast-Api-Calls:
+      - '31'
+      X-Content-Type-Options:
+      - nosniff
+      X-Response-Time:
+      - 437.624ms
+      Vary:
+      - Accept-Encoding
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJsYXRpdHVkZSI6MzkuNzM5MjM1OCwibG9uZ2l0dWRlIjotMTA0Ljk5MDI1MSwidGltZXpvbmUiOiJBbWVyaWNhL0RlbnZlciIsImN1cnJlbnRseSI6eyJ0aW1lIjoxNTQ2NjI2NzI4LCJzdW1tYXJ5IjoiUGFydGx5IENsb3VkeSIsImljb24iOiJwYXJ0bHktY2xvdWR5LWRheSIsIm5lYXJlc3RTdG9ybURpc3RhbmNlIjo1NzYsIm5lYXJlc3RTdG9ybUJlYXJpbmciOjMzMiwicHJlY2lwSW50ZW5zaXR5IjowLCJwcmVjaXBQcm9iYWJpbGl0eSI6MCwidGVtcGVyYXR1cmUiOjU0LjYzLCJhcHBhcmVudFRlbXBlcmF0dXJlIjo1NC42MywiZGV3UG9pbnQiOjIzLjE3LCJodW1pZGl0eSI6MC4yOSwicHJlc3N1cmUiOjEwMTMuMjksIndpbmRTcGVlZCI6Mi44OSwid2luZEd1c3QiOjUuMDQsIndpbmRCZWFyaW5nIjoxNDcsImNsb3VkQ292ZXIiOjAuMjUsInV2SW5kZXgiOjIsInZpc2liaWxpdHkiOjEwLCJvem9uZSI6MjY3LjA3fSwibWludXRlbHkiOnsic3VtbWFyeSI6IlBhcnRseSBjbG91ZHkgZm9yIHRoZSBob3VyLiIsImljb24iOiJwYXJ0bHktY2xvdWR5LWRheSIsImRhdGEiOlt7InRpbWUiOjE1NDY2MjY3MjAsInByZWNpcEludGVuc2l0eSI6MCwicHJlY2lwUHJvYmFiaWxpdHkiOjB9LHsidGltZSI6MTU0NjYyNjc4MCwicHJlY2lwSW50ZW5zaXR5IjowLCJwcmVjaXBQcm9iYWJpbGl0eSI6MH0seyJ0aW1lIjoxNTQ2NjI2ODQwLCJwcmVjaXBJbnRlbnNpdHkiOjAsInByZWNpcFByb2JhYmlsaXR5IjowfSx7InRpbWUiOjE1NDY2MjY5MDAsInByZWNpcEludGVuc2l0eSI6MCwicHJlY2lwUHJvYmFiaWxpdHkiOjB9LHsidGltZSI6MTU0NjYyNjk2MCwicHJlY2lwSW50ZW5zaXR5IjowLCJwcmVjaXBQcm9iYWJpbGl0eSI6MH0seyJ0aW1lIjoxNTQ2NjI3MDIwLCJwcmVjaXBJbnRlbnNpdHkiOjAsInByZWNpcFByb2JhYmlsaXR5IjowfSx7InRpbWUiOjE1NDY2MjcwODAsInByZWNpcEludGVuc2l0eSI6MCwicHJlY2lwUHJvYmFiaWxpdHkiOjB9LHsidGltZSI6MTU0NjYyNzE0MCwicHJlY2lwSW50ZW5zaXR5IjowLCJwcmVjaXBQcm9iYWJpbGl0eSI6MH0seyJ0aW1lIjoxNTQ2NjI3MjAwLCJwcmVjaXBJbnRlbnNpdHkiOjAsInByZWNpcFByb2JhYmlsaXR5IjowfSx7InRpbWUiOjE1NDY2MjcyNjAsInByZWNpcEludGVuc2l0eSI6MCwicHJlY2lwUHJvYmFiaWxpdHkiOjB9LHsidGltZSI6MTU0NjYyNzMyMCwicHJlY2lwSW50ZW5zaXR5IjowLCJwcmVjaXBQcm9iYWJpbGl0eSI6MH0seyJ0aW1lIjoxNTQ2NjI3MzgwLCJwcmVjaXBJbnRlbnNpdHkiOjAsInByZWNpcFByb2JhYmlsaXR5IjowfSx7InRpbWUiOjE1NDY2Mjc0NDAsInByZWNpcEludGVuc2l0eSI6MCwicHJlY2lwUHJvYmFiaWxpdHkiOjB9LHsidGltZSI6MTU0NjYyNzUwMCwicHJlY2lwSW50ZW5zaXR5IjowLCJwcmVjaXBQcm9iYWJpbGl0eSI6MH0seyJ0aW1lIjoxNTQ2NjI3NTYwLCJwcmVjaXBJbnRlbnNpdHkiOjAsInByZWNpcFByb2JhYmlsaXR5IjowfSx7InRpbWUiOjE1NDY2Mjc2MjAsInByZWNpcEludGVuc2l0eSI6MCwicHJlY2lwUHJvYmFiaWxpdHkiOjB9LHsidGltZSI6MTU0NjYyNzY4MCwicHJlY2lwSW50ZW5zaXR5IjowLCJwcmVjaXBQcm9iYWJpbGl0eSI6MH0seyJ0aW1lIjoxNTQ2NjI3NzQwLCJwcmVjaXBJbnRlbnNpdHkiOjAsInByZWNpcFByb2JhYmlsaXR5IjowfSx7InRpbWUiOjE1NDY2Mjc4MDAsInByZWNpcEludGVuc2l0eSI6MCwicHJlY2lwUHJvYmFiaWxpdHkiOjB9LHsidGltZSI6MTU0NjYyNzg2MCwicHJlY2lwSW50ZW5zaXR5IjowLCJwcmVjaXBQcm9iYWJpbGl0eSI6MH0seyJ0aW1lIjoxNTQ2NjI3OTIwLCJwcmVjaXBJbnRlbnNpdHkiOjAsInByZWNpcFByb2JhYmlsaXR5IjowfSx7InRpbWUiOjE1NDY2Mjc5ODAsInByZWNpcEludGVuc2l0eSI6MCwicHJlY2lwUHJvYmFiaWxpdHkiOjB9LHsidGltZSI6MTU0NjYyODA0MCwicHJlY2lwSW50ZW5zaXR5IjowLCJwcmVjaXBQcm9iYWJpbGl0eSI6MH0seyJ0aW1lIjoxNTQ2NjI4MTAwLCJwcmVjaXBJbnRlbnNpdHkiOjAsInByZWNpcFByb2JhYmlsaXR5IjowfSx7InRpbWUiOjE1NDY2MjgxNjAsInByZWNpcEludGVuc2l0eSI6MCwicHJlY2lwUHJvYmFiaWxpdHkiOjB9LHsidGltZSI6MTU0NjYyODIyMCwicHJlY2lwSW50ZW5zaXR5IjowLCJwcmVjaXBQcm9iYWJpbGl0eSI6MH0seyJ0aW1lIjoxNTQ2NjI4MjgwLCJwcmVjaXBJbnRlbnNpdHkiOjAsInByZWNpcFByb2JhYmlsaXR5IjowfSx7InRpbWUiOjE1NDY2MjgzNDAsInByZWNpcEludGVuc2l0eSI6MCwicHJlY2lwUHJvYmFiaWxpdHkiOjB9LHsidGltZSI6MTU0NjYyODQwMCwicHJlY2lwSW50ZW5zaXR5IjowLCJwcmVjaXBQcm9iYWJpbGl0eSI6MH0seyJ0aW1lIjoxNTQ2NjI4NDYwLCJwcmVjaXBJbnRlbnNpdHkiOjAsInByZWNpcFByb2JhYmlsaXR5IjowfSx7InRpbWUiOjE1NDY2Mjg1MjAsInByZWNpcEludGVuc2l0eSI6MCwicHJlY2lwUHJvYmFiaWxpdHkiOjB9LHsidGltZSI6MTU0NjYyODU4MCwicHJlY2lwSW50ZW5zaXR5IjowLCJwcmVjaXBQcm9iYWJpbGl0eSI6MH0seyJ0aW1lIjoxNTQ2NjI4NjQwLCJwcmVjaXBJbnRlbnNpdHkiOjAsInByZWNpcFByb2JhYmlsaXR5IjowfSx7InRpbWUiOjE1NDY2Mjg3MDAsInByZWNpcEludGVuc2l0eSI6MCwicHJlY2lwUHJvYmFiaWxpdHkiOjB9LHsidGltZSI6MTU0NjYyODc2MCwicHJlY2lwSW50ZW5zaXR5IjowLCJwcmVjaXBQcm9iYWJpbGl0eSI6MH0seyJ0aW1lIjoxNTQ2NjI4ODIwLCJwcmVjaXBJbnRlbnNpdHkiOjAsInByZWNpcFByb2JhYmlsaXR5IjowfSx7InRpbWUiOjE1NDY2Mjg4ODAsInByZWNpcEludGVuc2l0eSI6MCwicHJlY2lwUHJvYmFiaWxpdHkiOjB9LHsidGltZSI6MTU0NjYyODk0MCwicHJlY2lwSW50ZW5zaXR5IjowLCJwcmVjaXBQcm9iYWJpbGl0eSI6MH0seyJ0aW1lIjoxNTQ2NjI5MDAwLCJwcmVjaXBJbnRlbnNpdHkiOjAsInByZWNpcFByb2JhYmlsaXR5IjowfSx7InRpbWUiOjE1NDY2MjkwNjAsInByZWNpcEludGVuc2l0eSI6MCwicHJlY2lwUHJvYmFiaWxpdHkiOjB9LHsidGltZSI6MTU0NjYyOTEyMCwicHJlY2lwSW50ZW5zaXR5IjowLCJwcmVjaXBQcm9iYWJpbGl0eSI6MH0seyJ0aW1lIjoxNTQ2NjI5MTgwLCJwcmVjaXBJbnRlbnNpdHkiOjAsInByZWNpcFByb2JhYmlsaXR5IjowfSx7InRpbWUiOjE1NDY2MjkyNDAsInByZWNpcEludGVuc2l0eSI6MCwicHJlY2lwUHJvYmFiaWxpdHkiOjB9LHsidGltZSI6MTU0NjYyOTMwMCwicHJlY2lwSW50ZW5zaXR5IjowLCJwcmVjaXBQcm9iYWJpbGl0eSI6MH0seyJ0aW1lIjoxNTQ2NjI5MzYwLCJwcmVjaXBJbnRlbnNpdHkiOjAsInByZWNpcFByb2JhYmlsaXR5IjowfSx7InRpbWUiOjE1NDY2Mjk0MjAsInByZWNpcEludGVuc2l0eSI6MCwicHJlY2lwUHJvYmFiaWxpdHkiOjB9LHsidGltZSI6MTU0NjYyOTQ4MCwicHJlY2lwSW50ZW5zaXR5IjowLCJwcmVjaXBQcm9iYWJpbGl0eSI6MH0seyJ0aW1lIjoxNTQ2NjI5NTQwLCJwcmVjaXBJbnRlbnNpdHkiOjAsInByZWNpcFByb2JhYmlsaXR5IjowfSx7InRpbWUiOjE1NDY2Mjk2MDAsInByZWNpcEludGVuc2l0eSI6MCwicHJlY2lwUHJvYmFiaWxpdHkiOjB9LHsidGltZSI6MTU0NjYyOTY2MCwicHJlY2lwSW50ZW5zaXR5IjowLCJwcmVjaXBQcm9iYWJpbGl0eSI6MH0seyJ0aW1lIjoxNTQ2NjI5NzIwLCJwcmVjaXBJbnRlbnNpdHkiOjAsInByZWNpcFByb2JhYmlsaXR5IjowfSx7InRpbWUiOjE1NDY2Mjk3ODAsInByZWNpcEludGVuc2l0eSI6MCwicHJlY2lwUHJvYmFiaWxpdHkiOjB9LHsidGltZSI6MTU0NjYyOTg0MCwicHJlY2lwSW50ZW5zaXR5IjowLCJwcmVjaXBQcm9iYWJpbGl0eSI6MH0seyJ0aW1lIjoxNTQ2NjI5OTAwLCJwcmVjaXBJbnRlbnNpdHkiOjAsInByZWNpcFByb2JhYmlsaXR5IjowfSx7InRpbWUiOjE1NDY2Mjk5NjAsInByZWNpcEludGVuc2l0eSI6MCwicHJlY2lwUHJvYmFiaWxpdHkiOjB9LHsidGltZSI6MTU0NjYzMDAyMCwicHJlY2lwSW50ZW5zaXR5IjowLCJwcmVjaXBQcm9iYWJpbGl0eSI6MH0seyJ0aW1lIjoxNTQ2NjMwMDgwLCJwcmVjaXBJbnRlbnNpdHkiOjAsInByZWNpcFByb2JhYmlsaXR5IjowfSx7InRpbWUiOjE1NDY2MzAxNDAsInByZWNpcEludGVuc2l0eSI6MCwicHJlY2lwUHJvYmFiaWxpdHkiOjB9LHsidGltZSI6MTU0NjYzMDIwMCwicHJlY2lwSW50ZW5zaXR5IjowLCJwcmVjaXBQcm9iYWJpbGl0eSI6MH0seyJ0aW1lIjoxNTQ2NjMwMjYwLCJwcmVjaXBJbnRlbnNpdHkiOjAsInByZWNpcFByb2JhYmlsaXR5IjowfSx7InRpbWUiOjE1NDY2MzAzMjAsInByZWNpcEludGVuc2l0eSI6MCwicHJlY2lwUHJvYmFiaWxpdHkiOjB9XX0sImhvdXJseSI6eyJzdW1tYXJ5IjoiUGFydGx5IGNsb3VkeSB0b25pZ2h0LiIsImljb24iOiJwYXJ0bHktY2xvdWR5LW5pZ2h0IiwiZGF0YSI6W3sidGltZSI6MTU0NjYyNDgwMCwic3VtbWFyeSI6IlBhcnRseSBDbG91ZHkiLCJpY29uIjoicGFydGx5LWNsb3VkeS1kYXkiLCJwcmVjaXBJbnRlbnNpdHkiOjAuMDAyMSwicHJlY2lwUHJvYmFiaWxpdHkiOjAuMDEsInByZWNpcFR5cGUiOiJyYWluIiwidGVtcGVyYXR1cmUiOjUzLjU2LCJhcHBhcmVudFRlbXBlcmF0dXJlIjo1My41NiwiZGV3UG9pbnQiOjIyLjA5LCJodW1pZGl0eSI6MC4yOSwicHJlc3N1cmUiOjEwMTQuMDEsIndpbmRTcGVlZCI6Mi4zMywid2luZEd1c3QiOjQuNjcsIndpbmRCZWFyaW5nIjoxNTQsImNsb3VkQ292ZXIiOjAuMjgsInV2SW5kZXgiOjIsInZpc2liaWxpdHkiOjksIm96b25lIjoyNjcuOH0seyJ0aW1lIjoxNTQ2NjI4NDAwLCJzdW1tYXJ5IjoiQ2xlYXIiLCJpY29uIjoiY2xlYXItZGF5IiwicHJlY2lwSW50ZW5zaXR5IjowLCJwcmVjaXBQcm9iYWJpbGl0eSI6MCwidGVtcGVyYXR1cmUiOjU1LjU2LCJhcHBhcmVudFRlbXBlcmF0dXJlIjo1NS41NiwiZGV3UG9pbnQiOjI0LjExLCJodW1pZGl0eSI6MC4yOSwicHJlc3N1cmUiOjEwMTIuNjcsIndpbmRTcGVlZCI6My40MSwid2luZEd1c3QiOjUuMzYsIndpbmRCZWFyaW5nIjoxNDIsImNsb3VkQ292ZXIiOjAuMjIsInV2SW5kZXgiOjIsInZpc2liaWxpdHkiOjEwLCJvem9uZSI6MjY2LjQzfSx7InRpbWUiOjE1NDY2MzIwMDAsInN1bW1hcnkiOiJDbGVhciIsImljb24iOiJjbGVhci1kYXkiLCJwcmVjaXBJbnRlbnNpdHkiOjAsInByZWNpcFByb2JhYmlsaXR5IjowLCJ0ZW1wZXJhdHVyZSI6NTYuNDksImFwcGFyZW50VGVtcGVyYXR1cmUiOjU2LjQ5LCJkZXdQb2ludCI6MjUuNzksImh1bWlkaXR5IjowLjMsInByZXNzdXJlIjoxMDEyLjE4LCJ3aW5kU3BlZWQiOjMuOTIsIndpbmRHdXN0Ijo1LjY5LCJ3aW5kQmVhcmluZyI6MTE1LCJjbG91ZENvdmVyIjowLjEzLCJ1dkluZGV4IjoyLCJ2aXNpYmlsaXR5IjoxMCwib3pvbmUiOjI2NS4wNn0seyJ0aW1lIjoxNTQ2NjM1NjAwLCJzdW1tYXJ5IjoiQ2xlYXIiLCJpY29uIjoiY2xlYXItZGF5IiwicHJlY2lwSW50ZW5zaXR5IjowLCJwcmVjaXBQcm9iYWJpbGl0eSI6MCwidGVtcGVyYXR1cmUiOjU3LjQyLCJhcHBhcmVudFRlbXBlcmF0dXJlIjo1Ny40MiwiZGV3UG9pbnQiOjI2LjY2LCJodW1pZGl0eSI6MC4zMSwicHJlc3N1cmUiOjEwMTEuNjgsIndpbmRTcGVlZCI6My40NSwid2luZEd1c3QiOjUuMDYsIndpbmRCZWFyaW5nIjo4MiwiY2xvdWRDb3ZlciI6MC4wNiwidXZJbmRleCI6MSwidmlzaWJpbGl0eSI6MTAsIm96b25lIjoyNjMuNzl9LHsidGltZSI6MTU0NjYzOTIwMCwic3VtbWFyeSI6IkNsZWFyIiwiaWNvbiI6ImNsZWFyLWRheSIsInByZWNpcEludGVuc2l0eSI6MCwicHJlY2lwUHJvYmFiaWxpdHkiOjAsInRlbXBlcmF0dXJlIjo1Ni44NSwiYXBwYXJlbnRUZW1wZXJhdHVyZSI6NTYuODUsImRld1BvaW50IjoyNi41NywiaHVtaWRpdHkiOjAuMzEsInByZXNzdXJlIjoxMDExLjYyLCJ3aW5kU3BlZWQiOjMuNDQsIndpbmRHdXN0Ijo1LjM1LCJ3aW5kQmVhcmluZyI6ODMsImNsb3VkQ292ZXIiOjAuMDMsInV2SW5kZXgiOjEsInZpc2liaWxpdHkiOjEwLCJvem9uZSI6MjYyLjY2fSx7InRpbWUiOjE1NDY2NDI4MDAsInN1bW1hcnkiOiJDbGVhciIsImljb24iOiJjbGVhci1kYXkiLCJwcmVjaXBJbnRlbnNpdHkiOjAsInByZWNpcFByb2JhYmlsaXR5IjowLCJ0ZW1wZXJhdHVyZSI6NTMuMzgsImFwcGFyZW50VGVtcGVyYXR1cmUiOjUzLjM4LCJkZXdQb2ludCI6MjYuMDYsImh1bWlkaXR5IjowLjM0LCJwcmVzc3VyZSI6MTAxMS45OCwid2luZFNwZWVkIjozLjcyLCJ3aW5kR3VzdCI6Ni4wNywid2luZEJlYXJpbmciOjEyMSwiY2xvdWRDb3ZlciI6MC4wMSwidXZJbmRleCI6MCwidmlzaWJpbGl0eSI6MTAsIm96b25lIjoyNjEuNzZ9LHsidGltZSI6MTU0NjY0NjQwMCwic3VtbWFyeSI6IkNsZWFyIiwiaWNvbiI6ImNsZWFyLW5pZ2h0IiwicHJlY2lwSW50ZW5zaXR5IjowLCJwcmVjaXBQcm9iYWJpbGl0eSI6MCwidGVtcGVyYXR1cmUiOjQ3LjM2LCJhcHBhcmVudFRlbXBlcmF0dXJlIjo0NS44NiwiZGV3UG9pbnQiOjI1LjExLCJodW1pZGl0eSI6MC40MSwicHJlc3N1cmUiOjEwMTIuNzEsIndpbmRTcGVlZCI6My45NSwid2luZEd1c3QiOjQuNjEsIndpbmRCZWFyaW5nIjoxNTYsImNsb3VkQ292ZXIiOjAsInV2SW5kZXgiOjAsInZpc2liaWxpdHkiOjEwLCJvem9uZSI6MjYwLjg3fSx7InRpbWUiOjE1NDY2NTAwMDAsInN1bW1hcnkiOiJDbGVhciIsImljb24iOiJjbGVhci1uaWdodCIsInByZWNpcEludGVuc2l0eSI6MC4wMDA2LCJwcmVjaXBQcm9iYWJpbGl0eSI6MC4wMSwicHJlY2lwVHlwZSI6InJhaW4iLCJ0ZW1wZXJhdHVyZSI6NDMuNDksImFwcGFyZW50VGVtcGVyYXR1cmUiOjQwLjksImRld1BvaW50IjoyNC44NiwiaHVtaWRpdHkiOjAuNDcsInByZXNzdXJlIjoxMDEzLjY2LCJ3aW5kU3BlZWQiOjQuNTcsIndpbmRHdXN0Ijo2LjAyLCJ3aW5kQmVhcmluZyI6MTgzLCJjbG91ZENvdmVyIjowLjAxLCJ1dkluZGV4IjowLCJ2aXNpYmlsaXR5IjoxMCwib3pvbmUiOjI2MC4xfSx7InRpbWUiOjE1NDY2NTM2MDAsInN1bW1hcnkiOiJDbGVhciIsImljb24iOiJjbGVhci1uaWdodCIsInByZWNpcEludGVuc2l0eSI6MCwicHJlY2lwUHJvYmFiaWxpdHkiOjAsInRlbXBlcmF0dXJlIjo0MC4zLCJhcHBhcmVudFRlbXBlcmF0dXJlIjozNy4zMywiZGV3UG9pbnQiOjIzLjQ0LCJodW1pZGl0eSI6MC41MSwicHJlc3N1cmUiOjEwMTQuNiwid2luZFNwZWVkIjo0LjM4LCJ3aW5kR3VzdCI6NS42OSwid2luZEJlYXJpbmciOjI0NCwiY2xvdWRDb3ZlciI6MC4wMiwidXZJbmRleCI6MCwidmlzaWJpbGl0eSI6MTAsIm96b25lIjoyNTkuMn0seyJ0aW1lIjoxNTQ2NjU3MjAwLCJzdW1tYXJ5IjoiQ2xlYXIiLCJpY29uIjoiY2xlYXItbmlnaHQiLCJwcmVjaXBJbnRlbnNpdHkiOjAuMDAxNiwicHJlY2lwUHJvYmFiaWxpdHkiOjAuMDEsInByZWNpcFR5cGUiOiJyYWluIiwidGVtcGVyYXR1cmUiOjM4LjI2LCJhcHBhcmVudFRlbXBlcmF0dXJlIjozNS4wNiwiZGV3UG9pbnQiOjIxLjgsImh1bWlkaXR5IjowLjUxLCJwcmVzc3VyZSI6MTAxNS4wNiwid2luZFNwZWVkIjo0LjI2LCJ3aW5kR3VzdCI6NS40MSwid2luZEJlYXJpbmciOjI0MSwiY2xvdWRDb3ZlciI6MC4wNCwidXZJbmRleCI6MCwidmlzaWJpbGl0eSI6MTAsIm96b25lIjoyNTguNjl9LHsidGltZSI6MTU0NjY2MDgwMCwic3VtbWFyeSI6IkNsZWFyIiwiaWNvbiI6ImNsZWFyLW5pZ2h0IiwicHJlY2lwSW50ZW5zaXR5IjowLCJwcmVjaXBQcm9iYWJpbGl0eSI6MCwidGVtcGVyYXR1cmUiOjM2LjUzLCJhcHBhcmVudFRlbXBlcmF0dXJlIjozMi44NywiZGV3UG9pbnQiOjIwLjU5LCJodW1pZGl0eSI6MC41MiwicHJlc3N1cmUiOjEwMTUuMzgsIndpbmRTcGVlZCI6NC40NSwid2luZEd1c3QiOjUuMSwid2luZEJlYXJpbmciOjE3NiwiY2xvdWRDb3ZlciI6MC4wOSwidXZJbmRleCI6MCwidmlzaWJpbGl0eSI6MTAsIm96b25lIjoyNTguM30seyJ0aW1lIjoxNTQ2NjY0NDAwLCJzdW1tYXJ5IjoiUGFydGx5IENsb3VkeSIsImljb24iOiJwYXJ0bHktY2xvdWR5LW5pZ2h0IiwicHJlY2lwSW50ZW5zaXR5IjowLjAwMDMsInByZWNpcFByb2JhYmlsaXR5IjowLjAxLCJwcmVjaXBUeXBlIjoicmFpbiIsInRlbXBlcmF0dXJlIjozNS4xNiwiYXBwYXJlbnRUZW1wZXJhdHVyZSI6MzAuOCwiZGV3UG9pbnQiOjE5LjQ0LCJodW1pZGl0eSI6MC41MiwicHJlc3N1cmUiOjEwMTUuNTQsIndpbmRTcGVlZCI6NC45OCwid2luZEd1c3QiOjUuODcsIndpbmRCZWFyaW5nIjoyMjcsImNsb3VkQ292ZXIiOjAuMjksInV2SW5kZXgiOjAsInZpc2liaWxpdHkiOjEwLCJvem9uZSI6MjU4LjA1fSx7InRpbWUiOjE1NDY2NjgwMDAsInN1bW1hcnkiOiJQYXJ0bHkgQ2xvdWR5IiwiaWNvbiI6InBhcnRseS1jbG91ZHktbmlnaHQiLCJwcmVjaXBJbnRlbnNpdHkiOjAsInByZWNpcFByb2JhYmlsaXR5IjowLCJ0ZW1wZXJhdHVyZSI6MzQuMjgsImFwcGFyZW50VGVtcGVyYXR1cmUiOjI5LjU0LCJkZXdQb2ludCI6MTguNTQsImh1bWlkaXR5IjowLjUyLCJwcmVzc3VyZSI6MTAxNS45LCJ3aW5kU3BlZWQiOjUuMjUsIndpbmRHdXN0Ijo2LjMyLCJ3aW5kQmVhcmluZyI6MjMwLCJjbG91ZENvdmVyIjowLjQ2LCJ1dkluZGV4IjowLCJ2aXNpYmlsaXR5IjoxMCwib3pvbmUiOjI1Ny43OH0seyJ0aW1lIjoxNTQ2NjcxNjAwLCJzdW1tYXJ5IjoiUGFydGx5IENsb3VkeSIsImljb24iOiJwYXJ0bHktY2xvdWR5LW5pZ2h0IiwicHJlY2lwSW50ZW5zaXR5IjowLCJwcmVjaXBQcm9iYWJpbGl0eSI6MCwidGVtcGVyYXR1cmUiOjMzLjU3LCJhcHBhcmVudFRlbXBlcmF0dXJlIjoyOC42NiwiZGV3UG9pbnQiOjE3LjY4LCJodW1pZGl0eSI6MC41MiwicHJlc3N1cmUiOjEwMTYuMTcsIndpbmRTcGVlZCI6NS4zMSwid2luZEd1c3QiOjcuMDMsIndpbmRCZWFyaW5nIjoyMzEsImNsb3VkQ292ZXIiOjAuMzgsInV2SW5kZXgiOjAsInZpc2liaWxpdHkiOjEwLCJvem9uZSI6MjU3LjM5fSx7InRpbWUiOjE1NDY2NzUyMDAsInN1bW1hcnkiOiJQYXJ0bHkgQ2xvdWR5IiwiaWNvbiI6InBhcnRseS1jbG91ZHktbmlnaHQiLCJwcmVjaXBJbnRlbnNpdHkiOjAsInByZWNpcFByb2JhYmlsaXR5IjowLCJ0ZW1wZXJhdHVyZSI6MzEuMjQsImFwcGFyZW50VGVtcGVyYXR1cmUiOjI2LjgsImRld1BvaW50IjoxNy4yNiwiaHVtaWRpdHkiOjAuNTYsInByZXNzdXJlIjoxMDE4Ljg5LCJ3aW5kU3BlZWQiOjQuMzcsIndpbmRHdXN0Ijo2LjEsIndpbmRCZWFyaW5nIjoyMTgsImNsb3VkQ292ZXIiOjAuMzQsInV2SW5kZXgiOjAsInZpc2liaWxpdHkiOjEwLCJvem9uZSI6MjU2Ljg4fSx7InRpbWUiOjE1NDY2Nzg4MDAsInN1bW1hcnkiOiJQYXJ0bHkgQ2xvdWR5IiwiaWNvbiI6InBhcnRseS1jbG91ZHktbmlnaHQiLCJwcmVjaXBJbnRlbnNpdHkiOjAsInByZWNpcFByb2JhYmlsaXR5IjowLCJ0ZW1wZXJhdHVyZSI6MzAuODUsImFwcGFyZW50VGVtcGVyYXR1cmUiOjI2LjU0LCJkZXdQb2ludCI6MTYuNzksImh1bWlkaXR5IjowLjU1LCJwcmVzc3VyZSI6MTAxOS4wNCwid2luZFNwZWVkIjo0LjE5LCJ3aW5kR3VzdCI6Ni4wNSwid2luZEJlYXJpbmciOjIxOCwiY2xvdWRDb3ZlciI6MC4zMywidXZJbmRleCI6MCwidmlzaWJpbGl0eSI6MTAsIm96b25lIjoyNTYuMzV9LHsidGltZSI6MTU0NjY4MjQwMCwic3VtbWFyeSI6IlBhcnRseSBDbG91ZHkiLCJpY29uIjoicGFydGx5LWNsb3VkeS1uaWdodCIsInByZWNpcEludGVuc2l0eSI6MCwicHJlY2lwUHJvYmFiaWxpdHkiOjAsInRlbXBlcmF0dXJlIjozMCwiYXBwYXJlbnRUZW1wZXJhdHVyZSI6MjUuMiwiZGV3UG9pbnQiOjE2LjQ2LCJodW1pZGl0eSI6MC41NywicHJlc3N1cmUiOjEwMTkuMjYsIndpbmRTcGVlZCI6NC41Miwid2luZEd1c3QiOjUuOTgsIndpbmRCZWFyaW5nIjoyMjAsImNsb3VkQ292ZXIiOjAuMywidXZJbmRleCI6MCwidmlzaWJpbGl0eSI6MTAsIm96b25lIjoyNTUuODR9LHsidGltZSI6MTU0NjY4NjAwMCwic3VtbWFyeSI6IkNsZWFyIiwiaWNvbiI6ImNsZWFyLW5pZ2h0IiwicHJlY2lwSW50ZW5zaXR5IjowLCJwcmVjaXBQcm9iYWJpbGl0eSI6MCwidGVtcGVyYXR1cmUiOjI5LjIsImFwcGFyZW50VGVtcGVyYXR1cmUiOjIzLjY4LCJkZXdQb2ludCI6MTYuMjEsImh1bWlkaXR5IjowLjU4LCJwcmVzc3VyZSI6MTAxOS40OSwid2luZFNwZWVkIjo1LjExLCJ3aW5kR3VzdCI6NS45Mywid2luZEJlYXJpbmciOjIxOCwiY2xvdWRDb3ZlciI6MC4yMywidXZJbmRleCI6MCwidmlzaWJpbGl0eSI6MTAsIm96b25lIjoyNTUuNDV9LHsidGltZSI6MTU0NjY4OTYwMCwic3VtbWFyeSI6IkNsZWFyIiwiaWNvbiI6ImNsZWFyLW5pZ2h0IiwicHJlY2lwSW50ZW5zaXR5IjowLCJwcmVjaXBQcm9iYWJpbGl0eSI6MCwidGVtcGVyYXR1cmUiOjI3Ljk5LCJhcHBhcmVudFRlbXBlcmF0dXJlIjoyMS44NiwiZGV3UG9pbnQiOjE1Ljk2LCJodW1pZGl0eSI6MC42LCJwcmVzc3VyZSI6MTAxOS44NSwid2luZFNwZWVkIjo1LjU0LCJ3aW5kR3VzdCI6NS44OCwid2luZEJlYXJpbmciOjIxNiwiY2xvdWRDb3ZlciI6MC4xNiwidXZJbmRleCI6MCwidmlzaWJpbGl0eSI6MTAsIm96b25lIjoyNTQuOTN9LHsidGltZSI6MTU0NjY5MzIwMCwic3VtbWFyeSI6IkNsZWFyIiwiaWNvbiI6ImNsZWFyLW5pZ2h0IiwicHJlY2lwSW50ZW5zaXR5IjowLCJwcmVjaXBQcm9iYWJpbGl0eSI6MCwidGVtcGVyYXR1cmUiOjI2LjU0LCJhcHBhcmVudFRlbXBlcmF0dXJlIjoyMC4wNiwiZGV3UG9pbnQiOjE1LjEzLCJodW1pZGl0eSI6MC42MiwicHJlc3N1cmUiOjEwMjAuNDYsIndpbmRTcGVlZCI6NS42Mywid2luZEd1c3QiOjUuOTEsIndpbmRCZWFyaW5nIjoyMjUsImNsb3VkQ292ZXIiOjAuMTMsInV2SW5kZXgiOjAsInZpc2liaWxpdHkiOjEwLCJvem9uZSI6MjU0LjR9LHsidGltZSI6MTU0NjY5NjgwMCwic3VtbWFyeSI6IkNsZWFyIiwiaWNvbiI6ImNsZWFyLW5pZ2h0IiwicHJlY2lwSW50ZW5zaXR5IjowLCJwcmVjaXBQcm9iYWJpbGl0eSI6MCwidGVtcGVyYXR1cmUiOjI1LjM2LCJhcHBhcmVudFRlbXBlcmF0dXJlIjoxOC43NCwiZGV3UG9pbnQiOjE0LjI5LCJodW1pZGl0eSI6MC42MiwicHJlc3N1cmUiOjEwMjEuMTQsIndpbmRTcGVlZCI6NS41NSwid2luZEd1c3QiOjUuOTYsIndpbmRCZWFyaW5nIjoyMzYsImNsb3VkQ292ZXIiOjAuMTEsInV2SW5kZXgiOjAsInZpc2liaWxpdHkiOjEwLCJvem9uZSI6MjUzLjc0fSx7InRpbWUiOjE1NDY3MDA0MDAsInN1bW1hcnkiOiJDbGVhciIsImljb24iOiJjbGVhci1kYXkiLCJwcmVjaXBJbnRlbnNpdHkiOjAsInByZWNpcFByb2JhYmlsaXR5IjowLCJ0ZW1wZXJhdHVyZSI6MjUuNzIsImFwcGFyZW50VGVtcGVyYXR1cmUiOjE5LjQzLCJkZXdQb2ludCI6MTQuNjgsImh1bWlkaXR5IjowLjYyLCJwcmVzc3VyZSI6MTAyMS4xNSwid2luZFNwZWVkIjo1LjI3LCJ3aW5kR3VzdCI6NS43Miwid2luZEJlYXJpbmciOjIzNCwiY2xvdWRDb3ZlciI6MC4xLCJ1dkluZGV4IjowLCJ2aXNpYmlsaXR5IjoxMCwib3pvbmUiOjI1My4yfSx7InRpbWUiOjE1NDY3MDQwMDAsInN1bW1hcnkiOiJDbGVhciIsImljb24iOiJjbGVhci1kYXkiLCJwcmVjaXBJbnRlbnNpdHkiOjAsInByZWNpcFByb2JhYmlsaXR5IjowLCJ0ZW1wZXJhdHVyZSI6MzAuMDQsImFwcGFyZW50VGVtcGVyYXR1cmUiOjI1LjE2LCJkZXdQb2ludCI6MTcuMzIsImh1bWlkaXR5IjowLjU5LCJwcmVzc3VyZSI6MTAxOS45OCwid2luZFNwZWVkIjo0LjYxLCJ3aW5kR3VzdCI6NC44Nywid2luZEJlYXJpbmciOjIwNiwiY2xvdWRDb3ZlciI6MC4xMSwidXZJbmRleCI6MSwidmlzaWJpbGl0eSI6MTAsIm96b25lIjoyNTIuNjd9LHsidGltZSI6MTU0NjcwNzYwMCwic3VtbWFyeSI6IkNsZWFyIiwiaWNvbiI6ImNsZWFyLWRheSIsInByZWNpcEludGVuc2l0eSI6MCwicHJlY2lwUHJvYmFiaWxpdHkiOjAsInRlbXBlcmF0dXJlIjozNy4wMiwiYXBwYXJlbnRUZW1wZXJhdHVyZSI6MzQuMjgsImRld1BvaW50IjoyMS4wOCwiaHVtaWRpdHkiOjAuNTIsInByZXNzdXJlIjoxMDE4LjA5LCJ3aW5kU3BlZWQiOjMuNjEsIndpbmRHdXN0IjozLjc1LCJ3aW5kQmVhcmluZyI6MTgwLCJjbG91ZENvdmVyIjowLjE0LCJ1dkluZGV4IjoxLCJ2aXNpYmlsaXR5IjoxMCwib3pvbmUiOjI1Mi4xNH0seyJ0aW1lIjoxNTQ2NzExMjAwLCJzdW1tYXJ5IjoiQ2xlYXIiLCJpY29uIjoiY2xlYXItZGF5IiwicHJlY2lwSW50ZW5zaXR5IjowLCJwcmVjaXBQcm9iYWJpbGl0eSI6MCwidGVtcGVyYXR1cmUiOjQyLjc0LCJhcHBhcmVudFRlbXBlcmF0dXJlIjo0MS4zOSwiZGV3UG9pbnQiOjI0LjIsImh1bWlkaXR5IjowLjQ4LCJwcmVzc3VyZSI6MTAxNi4zNSwid2luZFNwZWVkIjozLjA2LCJ3aW5kR3VzdCI6My4yLCJ3aW5kQmVhcmluZyI6MTY3LCJjbG91ZENvdmVyIjowLjE5LCJ1dkluZGV4IjoyLCJ2aXNpYmlsaXR5IjoxMCwib3pvbmUiOjI1MS4wOH0seyJ0aW1lIjoxNTQ2NzE0ODAwLCJzdW1tYXJ5IjoiUGFydGx5IENsb3VkeSIsImljb24iOiJwYXJ0bHktY2xvdWR5LWRheSIsInByZWNpcEludGVuc2l0eSI6MCwicHJlY2lwUHJvYmFiaWxpdHkiOjAsInRlbXBlcmF0dXJlIjo0Ni42NywiYXBwYXJlbnRUZW1wZXJhdHVyZSI6NDUuNzIsImRld1BvaW50IjoyNi4wOSwiaHVtaWRpdHkiOjAuNDQsInByZXNzdXJlIjoxMDE1LCJ3aW5kU3BlZWQiOjMuMiwid2luZEd1c3QiOjMuNTIsIndpbmRCZWFyaW5nIjoxMzUsImNsb3VkQ292ZXIiOjAuMjYsInV2SW5kZXgiOjIsInZpc2liaWxpdHkiOjEwLCJvem9uZSI6MjQ4Ljk0fSx7InRpbWUiOjE1NDY3MTg0MDAsInN1bW1hcnkiOiJQYXJ0bHkgQ2xvdWR5IiwiaWNvbiI6InBhcnRseS1jbG91ZHktZGF5IiwicHJlY2lwSW50ZW5zaXR5IjowLCJwcmVjaXBQcm9iYWJpbGl0eSI6MCwidGVtcGVyYXR1cmUiOjQ4Ljk0LCJhcHBhcmVudFRlbXBlcmF0dXJlIjo0Ny44MiwiZGV3UG9pbnQiOjI3LjMsImh1bWlkaXR5IjowLjQzLCJwcmVzc3VyZSI6MTAxMy44MSwid2luZFNwZWVkIjozLjc2LCJ3aW5kR3VzdCI6NC40OSwid2luZEJlYXJpbmciOjExMCwiY2xvdWRDb3ZlciI6MC4zNSwidXZJbmRleCI6MiwidmlzaWJpbGl0eSI6MTAsIm96b25lIjoyNDYuMjR9LHsidGltZSI6MTU0NjcyMjAwMCwic3VtbWFyeSI6IlBhcnRseSBDbG91ZHkiLCJpY29uIjoicGFydGx5LWNsb3VkeS1kYXkiLCJwcmVjaXBJbnRlbnNpdHkiOjAsInByZWNpcFByb2JhYmlsaXR5IjowLCJ0ZW1wZXJhdHVyZSI6NTAuMTcsImFwcGFyZW50VGVtcGVyYXR1cmUiOjUwLjE3LCJkZXdQb2ludCI6MjcuOSwiaHVtaWRpdHkiOjAuNDIsInByZXNzdXJlIjoxMDEzLjA0LCJ3aW5kU3BlZWQiOjMuOTgsIndpbmRHdXN0Ijo1LjA1LCJ3aW5kQmVhcmluZyI6MTAxLCJjbG91ZENvdmVyIjowLjQzLCJ1dkluZGV4IjoyLCJ2aXNpYmlsaXR5IjoxMCwib3pvbmUiOjI0NC4wNn0seyJ0aW1lIjoxNTQ2NzI1NjAwLCJzdW1tYXJ5IjoiUGFydGx5IENsb3VkeSIsImljb24iOiJwYXJ0bHktY2xvdWR5LWRheSIsInByZWNpcEludGVuc2l0eSI6MCwicHJlY2lwUHJvYmFiaWxpdHkiOjAsInRlbXBlcmF0dXJlIjo0OC45NSwiYXBwYXJlbnRUZW1wZXJhdHVyZSI6NDcuOTYsImRld1BvaW50IjoyNy43NiwiaHVtaWRpdHkiOjAuNDQsInByZXNzdXJlIjoxMDEyLjg4LCJ3aW5kU3BlZWQiOjMuNjEsIndpbmRHdXN0Ijo0LjY4LCJ3aW5kQmVhcmluZyI6ODksImNsb3VkQ292ZXIiOjAuNDksInV2SW5kZXgiOjEsInZpc2liaWxpdHkiOjEwLCJvem9uZSI6MjQyLjk2fSx7InRpbWUiOjE1NDY3MjkyMDAsInN1bW1hcnkiOiJQYXJ0bHkgQ2xvdWR5IiwiaWNvbiI6InBhcnRseS1jbG91ZHktZGF5IiwicHJlY2lwSW50ZW5zaXR5IjowLCJwcmVjaXBQcm9iYWJpbGl0eSI6MCwidGVtcGVyYXR1cmUiOjQ1Ljk3LCJhcHBhcmVudFRlbXBlcmF0dXJlIjo0NS45NywiZGV3UG9pbnQiOjI3LjAyLCJodW1pZGl0eSI6MC40NywicHJlc3N1cmUiOjEwMTMuMTcsIndpbmRTcGVlZCI6Mi45Mywid2luZEd1c3QiOjMuODgsIndpbmRCZWFyaW5nIjo3NSwiY2xvdWRDb3ZlciI6MC41NCwidXZJbmRleCI6MCwidmlzaWJpbGl0eSI6MTAsIm96b25lIjoyNDIuNDF9LHsidGltZSI6MTU0NjczMjgwMCwic3VtbWFyeSI6Ik1vc3RseSBDbG91ZHkiLCJpY29uIjoicGFydGx5LWNsb3VkeS1uaWdodCIsInByZWNpcEludGVuc2l0eSI6MCwicHJlY2lwUHJvYmFiaWxpdHkiOjAsInRlbXBlcmF0dXJlIjo0My4wMSwiYXBwYXJlbnRUZW1wZXJhdHVyZSI6NDMuMDEsImRld1BvaW50IjoyNi4xOSwiaHVtaWRpdHkiOjAuNTEsInByZXNzdXJlIjoxMDEzLjU3LCJ3aW5kU3BlZWQiOjIuMywid2luZEd1c3QiOjMuMjUsIndpbmRCZWFyaW5nIjo2MiwiY2xvdWRDb3ZlciI6MC42LCJ1dkluZGV4IjowLCJ2aXNpYmlsaXR5IjoxMCwib3pvbmUiOjI0MS44Nn0seyJ0aW1lIjoxNTQ2NzM2NDAwLCJzdW1tYXJ5IjoiTW9zdGx5IENsb3VkeSIsImljb24iOiJwYXJ0bHktY2xvdWR5LW5pZ2h0IiwicHJlY2lwSW50ZW5zaXR5IjowLCJwcmVjaXBQcm9iYWJpbGl0eSI6MCwidGVtcGVyYXR1cmUiOjQxLjA3LCJhcHBhcmVudFRlbXBlcmF0dXJlIjo0MS4wNywiZGV3UG9pbnQiOjI1LjQxLCJodW1pZGl0eSI6MC41MywicHJlc3N1cmUiOjEwMTQuMDYsIndpbmRTcGVlZCI6MS44Niwid2luZEd1c3QiOjIuOTIsIndpbmRCZWFyaW5nIjo0MywiY2xvdWRDb3ZlciI6MC42OSwidXZJbmRleCI6MCwidmlzaWJpbGl0eSI6MTAsIm96b25lIjoyNDEuM30seyJ0aW1lIjoxNTQ2NzQwMDAwLCJzdW1tYXJ5IjoiTW9zdGx5IENsb3VkeSIsImljb24iOiJwYXJ0bHktY2xvdWR5LW5pZ2h0IiwicHJlY2lwSW50ZW5zaXR5IjowLCJwcmVjaXBQcm9iYWJpbGl0eSI6MCwidGVtcGVyYXR1cmUiOjM5LjA4LCJhcHBhcmVudFRlbXBlcmF0dXJlIjozOS4wOCwiZGV3UG9pbnQiOjI0LjQ4LCJodW1pZGl0eSI6MC41NSwicHJlc3N1cmUiOjEwMTQuNjksIndpbmRTcGVlZCI6MS45LCJ3aW5kR3VzdCI6Mi43MSwid2luZEJlYXJpbmciOjI0OSwiY2xvdWRDb3ZlciI6MC43OSwidXZJbmRleCI6MCwidmlzaWJpbGl0eSI6MTAsIm96b25lIjoyNDAuNjF9LHsidGltZSI6MTU0Njc0MzYwMCwic3VtbWFyeSI6Ik1vc3RseSBDbG91ZHkiLCJpY29uIjoicGFydGx5LWNsb3VkeS1uaWdodCIsInByZWNpcEludGVuc2l0eSI6MCwicHJlY2lwUHJvYmFiaWxpdHkiOjAsInRlbXBlcmF0dXJlIjozOC4wMiwiYXBwYXJlbnRUZW1wZXJhdHVyZSI6MzguMDIsImRld1BvaW50IjoyMy44LCJodW1pZGl0eSI6MC41NiwicHJlc3N1cmUiOjEwMTUuMDEsIndpbmRTcGVlZCI6MS44Nywid2luZEd1c3QiOjIuNTksIndpbmRCZWFyaW5nIjoyNTIsImNsb3VkQ292ZXIiOjAuODcsInV2SW5kZXgiOjAsInZpc2liaWxpdHkiOjEwLCJvem9uZSI6MjQwLjE5fSx7InRpbWUiOjE1NDY3NDcyMDAsInN1bW1hcnkiOiJNb3N0bHkgQ2xvdWR5IiwiaWNvbiI6InBhcnRseS1jbG91ZHktbmlnaHQiLCJwcmVjaXBJbnRlbnNpdHkiOjAsInByZWNpcFByb2JhYmlsaXR5IjowLCJ0ZW1wZXJhdHVyZSI6MzcuNSwiYXBwYXJlbnRUZW1wZXJhdHVyZSI6MzcuNSwiZGV3UG9pbnQiOjIzLjQ2LCJodW1pZGl0eSI6MC41NywicHJlc3N1cmUiOjEwMTQuNzgsIndpbmRTcGVlZCI6MS40OCwid2luZEd1c3QiOjIuNiwid2luZEJlYXJpbmciOjYyLCJjbG91ZENvdmVyIjowLjkxLCJ1dkluZGV4IjowLCJ2aXNpYmlsaXR5IjoxMCwib3pvbmUiOjIzOS43Nn0seyJ0aW1lIjoxNTQ2NzUwODAwLCJzdW1tYXJ5IjoiT3ZlcmNhc3QiLCJpY29uIjoiY2xvdWR5IiwicHJlY2lwSW50ZW5zaXR5IjowLCJwcmVjaXBQcm9iYWJpbGl0eSI6MCwidGVtcGVyYXR1cmUiOjM3LjMzLCJhcHBhcmVudFRlbXBlcmF0dXJlIjozNy4zMywiZGV3UG9pbnQiOjIzLjMzLCJodW1pZGl0eSI6MC41NywicHJlc3N1cmUiOjEwMTQuMjcsIndpbmRTcGVlZCI6MS43Mywid2luZEd1c3QiOjIuNywid2luZEJlYXJpbmciOjExMywiY2xvdWRDb3ZlciI6MC45NSwidXZJbmRleCI6MCwidmlzaWJpbGl0eSI6MTAsIm96b25lIjoyMzkuMzV9LHsidGltZSI6MTU0Njc1NDQwMCwic3VtbWFyeSI6Ik92ZXJjYXN0IiwiaWNvbiI6ImNsb3VkeSIsInByZWNpcEludGVuc2l0eSI6MCwicHJlY2lwUHJvYmFiaWxpdHkiOjAsInRlbXBlcmF0dXJlIjozNy4wMiwiYXBwYXJlbnRUZW1wZXJhdHVyZSI6MzcuMDIsImRld1BvaW50IjoyMy4wOCwiaHVtaWRpdHkiOjAuNTcsInByZXNzdXJlIjoxMDEzLjcyLCJ3aW5kU3BlZWQiOjEuOTEsIndpbmRHdXN0IjoyLjgzLCJ3aW5kQmVhcmluZyI6MjczLCJjbG91ZENvdmVyIjowLjk4LCJ1dkluZGV4IjowLCJ2aXNpYmlsaXR5IjoxMCwib3pvbmUiOjIzOS4yMX0seyJ0aW1lIjoxNTQ2NzU4MDAwLCJzdW1tYXJ5IjoiT3ZlcmNhc3QiLCJpY29uIjoiY2xvdWR5IiwicHJlY2lwSW50ZW5zaXR5IjowLCJwcmVjaXBQcm9iYWJpbGl0eSI6MCwidGVtcGVyYXR1cmUiOjM2LjQ1LCJhcHBhcmVudFRlbXBlcmF0dXJlIjozNi40NSwiZGV3UG9pbnQiOjIyLjU1LCJodW1pZGl0eSI6MC41NywicHJlc3N1cmUiOjEwMTMuMjIsIndpbmRTcGVlZCI6MS45Nywid2luZEd1c3QiOjMuMDgsIndpbmRCZWFyaW5nIjoyNzUsImNsb3VkQ292ZXIiOjAuOTcsInV2SW5kZXgiOjAsInZpc2liaWxpdHkiOjEwLCJvem9uZSI6MjM5LjM0fSx7InRpbWUiOjE1NDY3NjE2MDAsInN1bW1hcnkiOiJPdmVyY2FzdCIsImljb24iOiJjbG91ZHkiLCJwcmVjaXBJbnRlbnNpdHkiOjAsInByZWNpcFByb2JhYmlsaXR5IjowLCJ0ZW1wZXJhdHVyZSI6MzUuOTIsImFwcGFyZW50VGVtcGVyYXR1cmUiOjM1LjkyLCJkZXdQb2ludCI6MjEuOSwiaHVtaWRpdHkiOjAuNTYsInByZXNzdXJlIjoxMDEyLjcsIndpbmRTcGVlZCI6Mi4zMSwid2luZEd1c3QiOjMuMzYsIndpbmRCZWFyaW5nIjoyNjgsImNsb3VkQ292ZXIiOjAuOTQsInV2SW5kZXgiOjAsInZpc2liaWxpdHkiOjEwLCJvem9uZSI6MjM5LjQ5fSx7InRpbWUiOjE1NDY3NjUyMDAsInN1bW1hcnkiOiJNb3N0bHkgQ2xvdWR5IiwiaWNvbiI6InBhcnRseS1jbG91ZHktbmlnaHQiLCJwcmVjaXBJbnRlbnNpdHkiOjAsInByZWNpcFByb2JhYmlsaXR5IjowLCJ0ZW1wZXJhdHVyZSI6MzUuNDgsImFwcGFyZW50VGVtcGVyYXR1cmUiOjM1LjQ4LCJkZXdQb2ludCI6MjEuMywiaHVtaWRpdHkiOjAuNTYsInByZXNzdXJlIjoxMDEyLjE3LCJ3aW5kU3BlZWQiOjIuNDgsIndpbmRHdXN0IjozLjUyLCJ3aW5kQmVhcmluZyI6MjY3LCJjbG91ZENvdmVyIjowLjkyLCJ1dkluZGV4IjowLCJ2aXNpYmlsaXR5IjoxMCwib3pvbmUiOjI0MC4xOH0seyJ0aW1lIjoxNTQ2NzY4ODAwLCJzdW1tYXJ5IjoiTW9zdGx5IENsb3VkeSIsImljb24iOiJwYXJ0bHktY2xvdWR5LW5pZ2h0IiwicHJlY2lwSW50ZW5zaXR5IjowLCJwcmVjaXBQcm9iYWJpbGl0eSI6MCwidGVtcGVyYXR1cmUiOjM0LjkzLCJhcHBhcmVudFRlbXBlcmF0dXJlIjozNC45MywiZGV3UG9pbnQiOjIwLjk3LCJodW1pZGl0eSI6MC41NiwicHJlc3N1cmUiOjEwMTEuNjUsIndpbmRTcGVlZCI6Mi42OSwid2luZEd1c3QiOjMuNDIsIndpbmRCZWFyaW5nIjoxNzksImNsb3VkQ292ZXIiOjAuOTEsInV2SW5kZXgiOjAsInZpc2liaWxpdHkiOjEwLCJvem9uZSI6MjQxLjQzfSx7InRpbWUiOjE1NDY3NzI0MDAsInN1bW1hcnkiOiJNb3N0bHkgQ2xvdWR5IiwiaWNvbiI6InBhcnRseS1jbG91ZHktbmlnaHQiLCJwcmVjaXBJbnRlbnNpdHkiOjAsInByZWNpcFByb2JhYmlsaXR5IjowLCJ0ZW1wZXJhdHVyZSI6MzQuMjQsImFwcGFyZW50VGVtcGVyYXR1cmUiOjMxLjczLCJkZXdQb2ludCI6MjAuNzEsImh1bWlkaXR5IjowLjU3LCJwcmVzc3VyZSI6MTAxMS4xNCwid2luZFNwZWVkIjozLjA5LCJ3aW5kR3VzdCI6My4yLCJ3aW5kQmVhcmluZyI6MTk5LCJjbG91ZENvdmVyIjowLjksInV2SW5kZXgiOjAsInZpc2liaWxpdHkiOjEwLCJvem9uZSI6MjQzLjA3fSx7InRpbWUiOjE1NDY3NzYwMDAsInN1bW1hcnkiOiJNb3N0bHkgQ2xvdWR5IiwiaWNvbiI6InBhcnRseS1jbG91ZHktbmlnaHQiLCJwcmVjaXBJbnRlbnNpdHkiOjAsInByZWNpcFByb2JhYmlsaXR5IjowLCJ0ZW1wZXJhdHVyZSI6MzIuODQsImFwcGFyZW50VGVtcGVyYXR1cmUiOjI5Ljc3LCJkZXdQb2ludCI6MjAuMzcsImh1bWlkaXR5IjowLjYsInByZXNzdXJlIjoxMDEwLjcsIndpbmRTcGVlZCI6My4zOCwid2luZEd1c3QiOjMuNDEsIndpbmRCZWFyaW5nIjoyMjMsImNsb3VkQ292ZXIiOjAuODksInV2SW5kZXgiOjAsInZpc2liaWxpdHkiOjEwLCJvem9uZSI6MjQ0LjU4fSx7InRpbWUiOjE1NDY3Nzk2MDAsInN1bW1hcnkiOiJNb3N0bHkgQ2xvdWR5IiwiaWNvbiI6InBhcnRseS1jbG91ZHktbmlnaHQiLCJwcmVjaXBJbnRlbnNpdHkiOjAsInByZWNpcFByb2JhYmlsaXR5IjowLCJ0ZW1wZXJhdHVyZSI6MzEuMDIsImFwcGFyZW50VGVtcGVyYXR1cmUiOjI3LjMyLCJkZXdQb2ludCI6MTkuNTMsImh1bWlkaXR5IjowLjYyLCJwcmVzc3VyZSI6MTAxMC40OCwid2luZFNwZWVkIjozLjY4LCJ3aW5kR3VzdCI6My43NSwid2luZEJlYXJpbmciOjIxOCwiY2xvdWRDb3ZlciI6MC44LCJ1dkluZGV4IjowLCJ2aXNpYmlsaXR5IjoxMCwib3pvbmUiOjI0NS42N30seyJ0aW1lIjoxNTQ2NzgzMjAwLCJzdW1tYXJ5IjoiTW9zdGx5IENsb3VkeSIsImljb24iOiJwYXJ0bHktY2xvdWR5LW5pZ2h0IiwicHJlY2lwSW50ZW5zaXR5IjowLCJwcmVjaXBQcm9iYWJpbGl0eSI6MCwidGVtcGVyYXR1cmUiOjI5LjQ3LCJhcHBhcmVudFRlbXBlcmF0dXJlIjoyNS4xOCwiZGV3UG9pbnQiOjE4LjY4LCJodW1pZGl0eSI6MC42NCwicHJlc3N1cmUiOjEwMTAuMzMsIndpbmRTcGVlZCI6My45Nywid2luZEd1c3QiOjQuMDYsIndpbmRCZWFyaW5nIjoyMjcsImNsb3VkQ292ZXIiOjAuNjcsInV2SW5kZXgiOjAsInZpc2liaWxpdHkiOjEwLCJvem9uZSI6MjQ2Ljc1fSx7InRpbWUiOjE1NDY3ODY4MDAsInN1bW1hcnkiOiJQYXJ0bHkgQ2xvdWR5IiwiaWNvbiI6InBhcnRseS1jbG91ZHktZGF5IiwicHJlY2lwSW50ZW5zaXR5IjowLCJwcmVjaXBQcm9iYWJpbGl0eSI6MCwidGVtcGVyYXR1cmUiOjI5LjcxLCJhcHBhcmVudFRlbXBlcmF0dXJlIjoyNS4yOSwiZGV3UG9pbnQiOjE4LjUzLCJodW1pZGl0eSI6MC42MywicHJlc3N1cmUiOjEwMDkuOCwid2luZFNwZWVkIjo0LjEzLCJ3aW5kR3VzdCI6NC4yMSwid2luZEJlYXJpbmciOjIzMiwiY2xvdWRDb3ZlciI6MC41OCwidXZJbmRleCI6MCwidmlzaWJpbGl0eSI6MTAsIm96b25lIjoyNDguMzV9LHsidGltZSI6MTU0Njc5MDQwMCwic3VtbWFyeSI6Ik1vc3RseSBDbG91ZHkiLCJpY29uIjoicGFydGx5LWNsb3VkeS1kYXkiLCJwcmVjaXBJbnRlbnNpdHkiOjAsInByZWNpcFByb2JhYmlsaXR5IjowLCJ0ZW1wZXJhdHVyZSI6MzIuNywiYXBwYXJlbnRUZW1wZXJhdHVyZSI6MjkuMDMsImRld1BvaW50IjoxOS44NywiaHVtaWRpdHkiOjAuNTksInByZXNzdXJlIjoxMDA4LjYyLCJ3aW5kU3BlZWQiOjMuODcsIndpbmRHdXN0IjozLjkyLCJ3aW5kQmVhcmluZyI6MjE3LCJjbG91ZENvdmVyIjowLjYsInV2SW5kZXgiOjEsInZpc2liaWxpdHkiOjEwLCJvem9uZSI6MjUwLjYyfSx7InRpbWUiOjE1NDY3OTQwMDAsInN1bW1hcnkiOiJNb3N0bHkgQ2xvdWR5IiwiaWNvbiI6InBhcnRseS1jbG91ZHktZGF5IiwicHJlY2lwSW50ZW5zaXR5IjowLCJwcmVjaXBQcm9iYWJpbGl0eSI6MCwidGVtcGVyYXR1cmUiOjM4LjEyLCJhcHBhcmVudFRlbXBlcmF0dXJlIjozNS42OCwiZGV3UG9pbnQiOjIxLjkxLCJodW1pZGl0eSI6MC41MiwicHJlc3N1cmUiOjEwMDcuMDYsIndpbmRTcGVlZCI6My40OCwid2luZEd1c3QiOjMuODEsIndpbmRCZWFyaW5nIjoyMDEsImNsb3VkQ292ZXIiOjAuNjQsInV2SW5kZXgiOjEsInZpc2liaWxpdHkiOjEwLCJvem9uZSI6MjUzLjI3fSx7InRpbWUiOjE1NDY3OTc2MDAsInN1bW1hcnkiOiJNb3N0bHkgQ2xvdWR5IiwiaWNvbiI6InBhcnRseS1jbG91ZHktZGF5IiwicHJlY2lwSW50ZW5zaXR5IjowLCJwcmVjaXBQcm9iYWJpbGl0eSI6MCwidGVtcGVyYXR1cmUiOjQyLjczLCJhcHBhcmVudFRlbXBlcmF0dXJlIjo0MS4xNSwiZGV3UG9pbnQiOjIzLjQ4LCJodW1pZGl0eSI6MC40NiwicHJlc3N1cmUiOjEwMDUuNTQsIndpbmRTcGVlZCI6My4yNywid2luZEd1c3QiOjQuMTYsIndpbmRCZWFyaW5nIjoxNzYsImNsb3VkQ292ZXIiOjAuNjQsInV2SW5kZXgiOjIsInZpc2liaWxpdHkiOjEwLCJvem9uZSI6MjU2LjkzfV19LCJkYWlseSI6eyJzdW1tYXJ5IjoiTm8gcHJlY2lwaXRhdGlvbiB0aHJvdWdob3V0IHRoZSB3ZWVrLCB3aXRoIGhpZ2ggdGVtcGVyYXR1cmVzIGZhbGxpbmcgdG8gNDbCsEYgbmV4dCBGcmlkYXkuIiwiaWNvbiI6ImNsZWFyLWRheSIsImRhdGEiOlt7InRpbWUiOjE1NDY1ODUyMDAsInN1bW1hcnkiOiJQYXJ0bHkgY2xvdWR5IG92ZXJuaWdodC4iLCJpY29uIjoicGFydGx5LWNsb3VkeS1uaWdodCIsInN1bnJpc2VUaW1lIjoxNTQ2NjExNzQ2LCJzdW5zZXRUaW1lIjoxNTQ2NjQ1NzgyLCJtb29uUGhhc2UiOjAuOTYsInByZWNpcEludGVuc2l0eSI6MCwicHJlY2lwSW50ZW5zaXR5TWF4IjowLCJwcmVjaXBQcm9iYWJpbGl0eSI6MCwidGVtcGVyYXR1cmVIaWdoIjo1Ny40MiwidGVtcGVyYXR1cmVIaWdoVGltZSI6MTU0NjYzNTYwMCwidGVtcGVyYXR1cmVMb3ciOjI1LjM2LCJ0ZW1wZXJhdHVyZUxvd1RpbWUiOjE1NDY2OTY4MDAsImFwcGFyZW50VGVtcGVyYXR1cmVIaWdoIjo1Ny40MiwiYXBwYXJlbnRUZW1wZXJhdHVyZUhpZ2hUaW1lIjoxNTQ2NjM1NjAwLCJhcHBhcmVudFRlbXBlcmF0dXJlTG93IjoxOC43NCwiYXBwYXJlbnRUZW1wZXJhdHVyZUxvd1RpbWUiOjE1NDY2OTY4MDAsImRld1BvaW50IjoyMC44MiwiaHVtaWRpdHkiOjAuNDQsInByZXNzdXJlIjoxMDE0LjE5LCJ3aW5kU3BlZWQiOjIuNDQsIndpbmRHdXN0IjoxMC42LCJ3aW5kR3VzdFRpbWUiOjE1NDY1OTI0MDAsIndpbmRCZWFyaW5nIjoxOTAsImNsb3VkQ292ZXIiOjAuMSwidXZJbmRleCI6MiwidXZJbmRleFRpbWUiOjE1NDY2MjQ4MDAsInZpc2liaWxpdHkiOjEwLCJvem9uZSI6MjY1Ljc4LCJ0ZW1wZXJhdHVyZU1pbiI6MzEuOTIsInRlbXBlcmF0dXJlTWluVGltZSI6MTU0NjYxMDQwMCwidGVtcGVyYXR1cmVNYXgiOjU3LjQyLCJ0ZW1wZXJhdHVyZU1heFRpbWUiOjE1NDY2MzU2MDAsImFwcGFyZW50VGVtcGVyYXR1cmVNaW4iOjI5LjU0LCJhcHBhcmVudFRlbXBlcmF0dXJlTWluVGltZSI6MTU0NjY2ODAwMCwiYXBwYXJlbnRUZW1wZXJhdHVyZU1heCI6NTcuNDIsImFwcGFyZW50VGVtcGVyYXR1cmVNYXhUaW1lIjoxNTQ2NjM1NjAwfSx7InRpbWUiOjE1NDY2NzE2MDAsInN1bW1hcnkiOiJNb3N0bHkgY2xvdWR5IHN0YXJ0aW5nIGluIHRoZSBhZnRlcm5vb24uIiwiaWNvbiI6InBhcnRseS1jbG91ZHktbmlnaHQiLCJzdW5yaXNlVGltZSI6MTU0NjY5ODE0NSwic3Vuc2V0VGltZSI6MTU0NjczMjIzNiwibW9vblBoYXNlIjowLjk5LCJwcmVjaXBJbnRlbnNpdHkiOjAuMDAwMSwicHJlY2lwSW50ZW5zaXR5TWF4IjowLjAwMDIsInByZWNpcEludGVuc2l0eU1heFRpbWUiOjE1NDY2Nzg4MDAsInByZWNpcFByb2JhYmlsaXR5IjowLjAxLCJwcmVjaXBUeXBlIjoicmFpbiIsInRlbXBlcmF0dXJlSGlnaCI6NTAuMTcsInRlbXBlcmF0dXJlSGlnaFRpbWUiOjE1NDY3MjIwMDAsInRlbXBlcmF0dXJlTG93IjoyOS40NywidGVtcGVyYXR1cmVMb3dUaW1lIjoxNTQ2NzgzMjAwLCJhcHBhcmVudFRlbXBlcmF0dXJlSGlnaCI6NTAuMTcsImFwcGFyZW50VGVtcGVyYXR1cmVIaWdoVGltZSI6MTU0NjcyMjAwMCwiYXBwYXJlbnRUZW1wZXJhdHVyZUxvdyI6MjUuMTgsImFwcGFyZW50VGVtcGVyYXR1cmVMb3dUaW1lIjoxNTQ2NzgzMjAwLCJkZXdQb2ludCI6MjEuMzcsImh1bWlkaXR5IjowLjU0LCJwcmVzc3VyZSI6MTAxNi41OCwid2luZFNwZWVkIjoyLCJ3aW5kR3VzdCI6Ny4wMywid2luZEd1c3RUaW1lIjoxNTQ2NjcxNjAwLCJ3aW5kQmVhcmluZyI6MTk5LCJjbG91ZENvdmVyIjowLjQzLCJ1dkluZGV4IjoyLCJ1dkluZGV4VGltZSI6MTU0NjcxMTIwMCwidmlzaWJpbGl0eSI6MTAsIm96b25lIjoyNDguMzcsInRlbXBlcmF0dXJlTWluIjoyNS4zNiwidGVtcGVyYXR1cmVNaW5UaW1lIjoxNTQ2Njk2ODAwLCJ0ZW1wZXJhdHVyZU1heCI6NTAuMTcsInRlbXBlcmF0dXJlTWF4VGltZSI6MTU0NjcyMjAwMCwiYXBwYXJlbnRUZW1wZXJhdHVyZU1pbiI6MTguNzQsImFwcGFyZW50VGVtcGVyYXR1cmVNaW5UaW1lIjoxNTQ2Njk2ODAwLCJhcHBhcmVudFRlbXBlcmF0dXJlTWF4Ijo1MC4xNywiYXBwYXJlbnRUZW1wZXJhdHVyZU1heFRpbWUiOjE1NDY3MjIwMDB9LHsidGltZSI6MTU0Njc1ODAwMCwic3VtbWFyeSI6IlBhcnRseSBjbG91ZHkgdGhyb3VnaG91dCB0aGUgZGF5LiIsImljb24iOiJwYXJ0bHktY2xvdWR5LWRheSIsInN1bnJpc2VUaW1lIjoxNTQ2Nzg0NTQyLCJzdW5zZXRUaW1lIjoxNTQ2ODE4NjkxLCJtb29uUGhhc2UiOjAuMDMsInByZWNpcEludGVuc2l0eSI6MC4wMDAxLCJwcmVjaXBJbnRlbnNpdHlNYXgiOjAuMDAwOSwicHJlY2lwSW50ZW5zaXR5TWF4VGltZSI6MTU0NjgxOTIwMCwicHJlY2lwUHJvYmFiaWxpdHkiOjAuMDIsInByZWNpcFR5cGUiOiJyYWluIiwidGVtcGVyYXR1cmVIaWdoIjo0OS45MSwidGVtcGVyYXR1cmVIaWdoVGltZSI6MTU0NjgwODQwMCwidGVtcGVyYXR1cmVMb3ciOjI3LjU0LCJ0ZW1wZXJhdHVyZUxvd1RpbWUiOjE1NDY4Njk2MDAsImFwcGFyZW50VGVtcGVyYXR1cmVIaWdoIjo0OC4xMywiYXBwYXJlbnRUZW1wZXJhdHVyZUhpZ2hUaW1lIjoxNTQ2ODA4NDAwLCJhcHBhcmVudFRlbXBlcmF0dXJlTG93IjoyMC40NCwiYXBwYXJlbnRUZW1wZXJhdHVyZUxvd1RpbWUiOjE1NDY4Njk2MDAsImRld1BvaW50IjoyMS42OCwiaHVtaWRpdHkiOjAuNTEsInByZXNzdXJlIjoxMDA4LjI2LCJ3aW5kU3BlZWQiOjEuMzksIndpbmRHdXN0IjoxMC40NSwid2luZEd1c3RUaW1lIjoxNTQ2ODMwMDAwLCJ3aW5kQmVhcmluZyI6MjM4LCJjbG91ZENvdmVyIjowLjU3LCJ1dkluZGV4IjoyLCJ1dkluZGV4VGltZSI6MTU0Njc5NzYwMCwidmlzaWJpbGl0eSI6MTAsIm96b25lIjoyNjYuMTUsInRlbXBlcmF0dXJlTWluIjoyOS40NywidGVtcGVyYXR1cmVNaW5UaW1lIjoxNTQ2NzgzMjAwLCJ0ZW1wZXJhdHVyZU1heCI6NDkuOTEsInRlbXBlcmF0dXJlTWF4VGltZSI6MTU0NjgwODQwMCwiYXBwYXJlbnRUZW1wZXJhdHVyZU1pbiI6MjUuMTgsImFwcGFyZW50VGVtcGVyYXR1cmVNaW5UaW1lIjoxNTQ2NzgzMjAwLCJhcHBhcmVudFRlbXBlcmF0dXJlTWF4Ijo0OC4xMywiYXBwYXJlbnRUZW1wZXJhdHVyZU1heFRpbWUiOjE1NDY4MDg0MDB9LHsidGltZSI6MTU0Njg0NDQwMCwic3VtbWFyeSI6IkNsZWFyIHRocm91Z2hvdXQgdGhlIGRheS4iLCJpY29uIjoiY2xlYXItZGF5Iiwic3VucmlzZVRpbWUiOjE1NDY4NzA5MzcsInN1bnNldFRpbWUiOjE1NDY5MDUxNDcsIm1vb25QaGFzZSI6MC4wNiwicHJlY2lwSW50ZW5zaXR5IjowLjAwMDEsInByZWNpcEludGVuc2l0eU1heCI6MC4wMDAyLCJwcmVjaXBJbnRlbnNpdHlNYXhUaW1lIjoxNTQ2ODg0MDAwLCJwcmVjaXBQcm9iYWJpbGl0eSI6MC4wMSwicHJlY2lwVHlwZSI6InJhaW4iLCJ0ZW1wZXJhdHVyZUhpZ2giOjUzLjIxLCJ0ZW1wZXJhdHVyZUhpZ2hUaW1lIjoxNTQ2ODk0ODAwLCJ0ZW1wZXJhdHVyZUxvdyI6MjguNDUsInRlbXBlcmF0dXJlTG93VGltZSI6MTU0Njk1NjAwMCwiYXBwYXJlbnRUZW1wZXJhdHVyZUhpZ2giOjUzLjIxLCJhcHBhcmVudFRlbXBlcmF0dXJlSGlnaFRpbWUiOjE1NDY4OTQ4MDAsImFwcGFyZW50VGVtcGVyYXR1cmVMb3ciOjIzLjQ3LCJhcHBhcmVudFRlbXBlcmF0dXJlTG93VGltZSI6MTU0Njk1NjAwMCwiZGV3UG9pbnQiOjEzLjk5LCJodW1pZGl0eSI6MC4zNiwicHJlc3N1cmUiOjEwMTUuMjcsIndpbmRTcGVlZCI6NC43MSwid2luZEd1c3QiOjMzLjQ2LCJ3aW5kR3VzdFRpbWUiOjE1NDY5MDkyMDAsIndpbmRCZWFyaW5nIjoyMDQsImNsb3VkQ292ZXIiOjAuMTEsInV2SW5kZXgiOjIsInV2SW5kZXhUaW1lIjoxNTQ2ODg0MDAwLCJ2aXNpYmlsaXR5IjoxMCwib3pvbmUiOjI4MS44MywidGVtcGVyYXR1cmVNaW4iOjI3LjU0LCJ0ZW1wZXJhdHVyZU1pblRpbWUiOjE1NDY4Njk2MDAsInRlbXBlcmF0dXJlTWF4Ijo1My4yMSwidGVtcGVyYXR1cmVNYXhUaW1lIjoxNTQ2ODk0ODAwLCJhcHBhcmVudFRlbXBlcmF0dXJlTWluIjoyMC40NCwiYXBwYXJlbnRUZW1wZXJhdHVyZU1pblRpbWUiOjE1NDY4Njk2MDAsImFwcGFyZW50VGVtcGVyYXR1cmVNYXgiOjUzLjIxLCJhcHBhcmVudFRlbXBlcmF0dXJlTWF4VGltZSI6MTU0Njg5NDgwMH0seyJ0aW1lIjoxNTQ2OTMwODAwLCJzdW1tYXJ5IjoiUGFydGx5IGNsb3VkeSBpbiB0aGUgbW9ybmluZy4iLCJpY29uIjoicGFydGx5LWNsb3VkeS1kYXkiLCJzdW5yaXNlVGltZSI6MTU0Njk1NzMyOSwic3Vuc2V0VGltZSI6MTU0Njk5MTYwNSwibW9vblBoYXNlIjowLjA5LCJwcmVjaXBJbnRlbnNpdHkiOjAsInByZWNpcEludGVuc2l0eU1heCI6MCwicHJlY2lwUHJvYmFiaWxpdHkiOjAsInRlbXBlcmF0dXJlSGlnaCI6NTEuMTUsInRlbXBlcmF0dXJlSGlnaFRpbWUiOjE1NDY5Nzc2MDAsInRlbXBlcmF0dXJlTG93IjoyNC42MiwidGVtcGVyYXR1cmVMb3dUaW1lIjoxNTQ3MDQyNDAwLCJhcHBhcmVudFRlbXBlcmF0dXJlSGlnaCI6NTEuMTUsImFwcGFyZW50VGVtcGVyYXR1cmVIaWdoVGltZSI6MTU0Njk3NzYwMCwiYXBwYXJlbnRUZW1wZXJhdHVyZUxvdyI6MjQuNjIsImFwcGFyZW50VGVtcGVyYXR1cmVMb3dUaW1lIjoxNTQ3MDQyNDAwLCJkZXdQb2ludCI6MTUuNDIsImh1bWlkaXR5IjowLjM5LCJwcmVzc3VyZSI6MTAyOC42OSwid2luZFNwZWVkIjozLjc4LCJ3aW5kR3VzdCI6MTguNjcsIndpbmRHdXN0VGltZSI6MTU0NjkzMDgwMCwid2luZEJlYXJpbmciOjEzMCwiY2xvdWRDb3ZlciI6MC4wOCwidXZJbmRleCI6MiwidXZJbmRleFRpbWUiOjE1NDY5NzA0MDAsInZpc2liaWxpdHkiOjEwLCJvem9uZSI6MjY1LjY3LCJ0ZW1wZXJhdHVyZU1pbiI6MjguNDUsInRlbXBlcmF0dXJlTWluVGltZSI6MTU0Njk1NjAwMCwidGVtcGVyYXR1cmVNYXgiOjUxLjE1LCJ0ZW1wZXJhdHVyZU1heFRpbWUiOjE1NDY5Nzc2MDAsImFwcGFyZW50VGVtcGVyYXR1cmVNaW4iOjIzLjQ3LCJhcHBhcmVudFRlbXBlcmF0dXJlTWluVGltZSI6MTU0Njk1NjAwMCwiYXBwYXJlbnRUZW1wZXJhdHVyZU1heCI6NTEuMTUsImFwcGFyZW50VGVtcGVyYXR1cmVNYXhUaW1lIjoxNTQ2OTc3NjAwfSx7InRpbWUiOjE1NDcwMTcyMDAsInN1bW1hcnkiOiJNb3N0bHkgY2xvdWR5IHN0YXJ0aW5nIGluIHRoZSBhZnRlcm5vb24uIiwiaWNvbiI6InBhcnRseS1jbG91ZHktbmlnaHQiLCJzdW5yaXNlVGltZSI6MTU0NzA0MzcyMCwic3Vuc2V0VGltZSI6MTU0NzA3ODA2MywibW9vblBoYXNlIjowLjEyLCJwcmVjaXBJbnRlbnNpdHkiOjAsInByZWNpcEludGVuc2l0eU1heCI6MCwicHJlY2lwUHJvYmFiaWxpdHkiOjAsInRlbXBlcmF0dXJlSGlnaCI6NTUuODMsInRlbXBlcmF0dXJlSGlnaFRpbWUiOjE1NDcwNjc2MDAsInRlbXBlcmF0dXJlTG93IjozMC44NywidGVtcGVyYXR1cmVMb3dUaW1lIjoxNTQ3MTI4ODAwLCJhcHBhcmVudFRlbXBlcmF0dXJlSGlnaCI6NTUuODMsImFwcGFyZW50VGVtcGVyYXR1cmVIaWdoVGltZSI6MTU0NzA2NzYwMCwiYXBwYXJlbnRUZW1wZXJhdHVyZUxvdyI6MjcuNjEsImFwcGFyZW50VGVtcGVyYXR1cmVMb3dUaW1lIjoxNTQ3MTI4ODAwLCJkZXdQb2ludCI6MTYuMjQsImh1bWlkaXR5IjowLjQyLCJwcmVzc3VyZSI6MTAyNC44Niwid2luZFNwZWVkIjoxLjQ5LCJ3aW5kR3VzdCI6Ni4zNywid2luZEd1c3RUaW1lIjoxNTQ3MDY3NjAwLCJ3aW5kQmVhcmluZyI6NzMsImNsb3VkQ292ZXIiOjAuMzcsInV2SW5kZXgiOjIsInV2SW5kZXhUaW1lIjoxNTQ3MDU2ODAwLCJ2aXNpYmlsaXR5IjoxMCwib3pvbmUiOjI1OS44NywidGVtcGVyYXR1cmVNaW4iOjI0LjYyLCJ0ZW1wZXJhdHVyZU1pblRpbWUiOjE1NDcwNDI0MDAsInRlbXBlcmF0dXJlTWF4Ijo1NS44MywidGVtcGVyYXR1cmVNYXhUaW1lIjoxNTQ3MDY3NjAwLCJhcHBhcmVudFRlbXBlcmF0dXJlTWluIjoyNC42MiwiYXBwYXJlbnRUZW1wZXJhdHVyZU1pblRpbWUiOjE1NDcwNDI0MDAsImFwcGFyZW50VGVtcGVyYXR1cmVNYXgiOjU1LjgzLCJhcHBhcmVudFRlbXBlcmF0dXJlTWF4VGltZSI6MTU0NzA2NzYwMH0seyJ0aW1lIjoxNTQ3MTAzNjAwLCJzdW1tYXJ5IjoiTW9zdGx5IGNsb3VkeSB0aHJvdWdob3V0IHRoZSBkYXkuIiwiaWNvbiI6InBhcnRseS1jbG91ZHktZGF5Iiwic3VucmlzZVRpbWUiOjE1NDcxMzAxMDgsInN1bnNldFRpbWUiOjE1NDcxNjQ1MjMsIm1vb25QaGFzZSI6MC4xNSwicHJlY2lwSW50ZW5zaXR5IjowLjAwMDQsInByZWNpcEludGVuc2l0eU1heCI6MC4wMDQ4LCJwcmVjaXBJbnRlbnNpdHlNYXhUaW1lIjoxNTQ3MTg2NDAwLCJwcmVjaXBQcm9iYWJpbGl0eSI6MC4wMSwicHJlY2lwVHlwZSI6InJhaW4iLCJ0ZW1wZXJhdHVyZUhpZ2giOjU3LjI1LCJ0ZW1wZXJhdHVyZUhpZ2hUaW1lIjoxNTQ3MTU0MDAwLCJ0ZW1wZXJhdHVyZUxvdyI6MzIuOTUsInRlbXBlcmF0dXJlTG93VGltZSI6MTU0NzIxNTIwMCwiYXBwYXJlbnRUZW1wZXJhdHVyZUhpZ2giOjU3LjI1LCJhcHBhcmVudFRlbXBlcmF0dXJlSGlnaFRpbWUiOjE1NDcxNTQwMDAsImFwcGFyZW50VGVtcGVyYXR1cmVMb3ciOjMyLjk1LCJhcHBhcmVudFRlbXBlcmF0dXJlTG93VGltZSI6MTU0NzIxNTIwMCwiZGV3UG9pbnQiOjE4LjczLCJodW1pZGl0eSI6MC4zOSwicHJlc3N1cmUiOjEwMTMuOTcsIndpbmRTcGVlZCI6MC4zMSwid2luZEd1c3QiOjEwLjE5LCJ3aW5kR3VzdFRpbWUiOjE1NDcxODY0MDAsIndpbmRCZWFyaW5nIjoxMDYsImNsb3VkQ292ZXIiOjAuODgsInV2SW5kZXgiOjIsInV2SW5kZXhUaW1lIjoxNTQ3MTQzMjAwLCJ2aXNpYmlsaXR5IjoxMCwib3pvbmUiOjI4Ny4xMSwidGVtcGVyYXR1cmVNaW4iOjMwLjg3LCJ0ZW1wZXJhdHVyZU1pblRpbWUiOjE1NDcxMjg4MDAsInRlbXBlcmF0dXJlTWF4Ijo1Ny4yNSwidGVtcGVyYXR1cmVNYXhUaW1lIjoxNTQ3MTU0MDAwLCJhcHBhcmVudFRlbXBlcmF0dXJlTWluIjoyNy42MSwiYXBwYXJlbnRUZW1wZXJhdHVyZU1pblRpbWUiOjE1NDcxMjg4MDAsImFwcGFyZW50VGVtcGVyYXR1cmVNYXgiOjU3LjI1LCJhcHBhcmVudFRlbXBlcmF0dXJlTWF4VGltZSI6MTU0NzE1NDAwMH0seyJ0aW1lIjoxNTQ3MTkwMDAwLCJzdW1tYXJ5IjoiTW9zdGx5IGNsb3VkeSB0aHJvdWdob3V0IHRoZSBkYXkuIiwiaWNvbiI6InBhcnRseS1jbG91ZHktZGF5Iiwic3VucmlzZVRpbWUiOjE1NDcyMTY0OTUsInN1bnNldFRpbWUiOjE1NDcyNTA5ODQsIm1vb25QaGFzZSI6MC4xOCwicHJlY2lwSW50ZW5zaXR5IjowLjAwMDQsInByZWNpcEludGVuc2l0eU1heCI6MC4wMDM5LCJwcmVjaXBJbnRlbnNpdHlNYXhUaW1lIjoxNTQ3MTkwMDAwLCJwcmVjaXBQcm9iYWJpbGl0eSI6MC4wMywicHJlY2lwQWNjdW11bGF0aW9uIjowLjAwNiwicHJlY2lwVHlwZSI6InNub3ciLCJ0ZW1wZXJhdHVyZUhpZ2giOjQ1LjksInRlbXBlcmF0dXJlSGlnaFRpbWUiOjE1NDcyMzY4MDAsInRlbXBlcmF0dXJlTG93IjoyMy43NSwidGVtcGVyYXR1cmVMb3dUaW1lIjoxNTQ3MzAxNjAwLCJhcHBhcmVudFRlbXBlcmF0dXJlSGlnaCI6NDEuNTgsImFwcGFyZW50VGVtcGVyYXR1cmVIaWdoVGltZSI6MTU0NzIzNjgwMCwiYXBwYXJlbnRUZW1wZXJhdHVyZUxvdyI6MTkuMTcsImFwcGFyZW50VGVtcGVyYXR1cmVMb3dUaW1lIjoxNTQ3MzAxNjAwLCJkZXdQb2ludCI6MTguMzksImh1bWlkaXR5IjowLjQ2LCJwcmVzc3VyZSI6MTAxNy42Miwid2luZFNwZWVkIjoyLjczLCJ3aW5kR3VzdCI6MTIuNDgsIndpbmRHdXN0VGltZSI6MTU0NzI0NDAwMCwid2luZEJlYXJpbmciOjMwLCJjbG91ZENvdmVyIjowLjgsInV2SW5kZXgiOjIsInV2SW5kZXhUaW1lIjoxNTQ3MjI5NjAwLCJ2aXNpYmlsaXR5IjoxMCwib3pvbmUiOjI4OC4zMywidGVtcGVyYXR1cmVNaW4iOjI5LjYsInRlbXBlcmF0dXJlTWluVGltZSI6MTU0NzI3MjgwMCwidGVtcGVyYXR1cmVNYXgiOjQ1LjksInRlbXBlcmF0dXJlTWF4VGltZSI6MTU0NzIzNjgwMCwiYXBwYXJlbnRUZW1wZXJhdHVyZU1pbiI6MjQuMTMsImFwcGFyZW50VGVtcGVyYXR1cmVNaW5UaW1lIjoxNTQ3MjcyODAwLCJhcHBhcmVudFRlbXBlcmF0dXJlTWF4Ijo0MS41OCwiYXBwYXJlbnRUZW1wZXJhdHVyZU1heFRpbWUiOjE1NDcyMzY4MDB9XX0sImZsYWdzIjp7InNvdXJjZXMiOlsibmVhcmVzdC1wcmVjaXAiLCJud3NwYSIsImNtYyIsImdmcyIsImhycnIiLCJpY29uIiwiaXNkIiwibWFkaXMiLCJuYW0iLCJzcmVmIiwiZGFya3NreSJdLCJuZWFyZXN0LXN0YXRpb24iOjAuODM3LCJ1bml0cyI6InVzIn0sIm9mZnNldCI6LTd9
+    http_version: 
+  recorded_at: Fri, 04 Jan 2019 18:32:08 GMT
+- request:
+    method: get
+    uri: http://api.giphy.com/v1/gifs/search?api_key=RuvPSy2VZTKtS5P48tIy7RVyb3b2PTXk&limit=1&q=Partly%20cloudy%20overnight.
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      X-Ratelimit-Limit-Hour:
+      - '42'
+      X-Ratelimit-Remaining-Hour:
+      - '41'
+      X-Ratelimit-Limit-Day:
+      - '1000'
+      X-Ratelimit-Remaining-Day:
+      - '999'
+      X-Robots-Tag:
+      - noindex
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, DELETE, OPTIONS
+      Access-Control-Allow-Headers:
+      - Content-Type, Accept, x-requested-with, cache-control
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - max-age=30
+      Content-Length:
+      - '1090'
+      Accept-Ranges:
+      - bytes
+      Date:
+      - Fri, 04 Jan 2019 18:32:09 GMT
+      Age:
+      - '96'
+      Connection:
+      - keep-alive
+      X-Served-By:
+      - cache-iad2149-IAD, cache-ord1731-ORD
+      X-Cache-Hits:
+      - 1, 1
+      X-Timer:
+      - S1546626729.012797,VS0,VE0
+      Vary:
+      - Accept-Encoding
+    body:
+      encoding: ASCII-8BIT
+      string: '{"data":[{"type":"gif","id":"alEGxmahCCywE","slug":"pretty-sky-gorgeous-alEGxmahCCywE","url":"https:\/\/giphy.com\/gifs\/pretty-sky-gorgeous-alEGxmahCCywE","bitly_gif_url":"https:\/\/gph.is\/1ijeEL5","bitly_url":"https:\/\/gph.is\/1ijeEL5","embed_url":"https:\/\/giphy.com\/embed\/alEGxmahCCywE","username":"","source":"https:\/\/strawberrylicorice.tumblr.com\/post\/30159814933","rating":"g","content_url":"","source_tld":"strawberrylicorice.tumblr.com","source_post_url":"https:\/\/strawberrylicorice.tumblr.com\/post\/30159814933","is_sticker":0,"import_datetime":"2014-01-09
+        04:10:32","trending_datetime":"1970-01-01 00:00:00","images":{"fixed_height_still":{"url":"https:\/\/media3.giphy.com\/media\/alEGxmahCCywE\/200_s.gif","width":"434","height":"200"},"original_still":{"url":"https:\/\/media3.giphy.com\/media\/alEGxmahCCywE\/giphy_s.gif","width":"499","height":"230"},"fixed_width":{"url":"https:\/\/media3.giphy.com\/media\/alEGxmahCCywE\/200w.gif","width":"200","height":"92","size":"36886","mp4":"https:\/\/media3.giphy.com\/media\/alEGxmahCCywE\/200w.mp4","mp4_size":"8868","webp":"https:\/\/media3.giphy.com\/media\/alEGxmahCCywE\/200w.webp","webp_size":"24054"},"fixed_height_small_still":{"url":"https:\/\/media3.giphy.com\/media\/alEGxmahCCywE\/100_s.gif","width":"217","height":"100"},"fixed_height_downsampled":{"url":"https:\/\/media3.giphy.com\/media\/alEGxmahCCywE\/200_d.gif","width":"434","height":"200","size":"309991","webp":"https:\/\/media3.giphy.com\/media\/alEGxmahCCywE\/200_d.webp","webp_size":"50738"},"preview":{"width":"498","height":"230","mp4":"https:\/\/media3.giphy.com\/media\/alEGxmahCCywE\/giphy-preview.mp4","mp4_size":"38922"},"fixed_height_small":{"url":"https:\/\/media3.giphy.com\/media\/alEGxmahCCywE\/100.gif","width":"217","height":"100","size":"126913","mp4":"https:\/\/media3.giphy.com\/media\/alEGxmahCCywE\/100.mp4","mp4_size":"71970","webp":"https:\/\/media3.giphy.com\/media\/alEGxmahCCywE\/100.webp","webp_size":"25826"},"downsized_still":{"url":"https:\/\/media3.giphy.com\/media\/alEGxmahCCywE\/giphy-downsized_s.gif","width":"499","height":"230","size":"60146"},"downsized":{"url":"https:\/\/media3.giphy.com\/media\/alEGxmahCCywE\/giphy-downsized.gif","width":"499","height":"230","size":"392697"},"downsized_large":{"url":"https:\/\/media3.giphy.com\/media\/alEGxmahCCywE\/giphy.gif","width":"499","height":"230","size":"392697"},"fixed_width_small_still":{"url":"https:\/\/media3.giphy.com\/media\/alEGxmahCCywE\/100w_s.gif","width":"100","height":"46"},"preview_webp":{"url":"https:\/\/media3.giphy.com\/media\/alEGxmahCCywE\/giphy-preview.webp","width":"449","height":"207","size":"49194"},"fixed_width_still":{"url":"https:\/\/media3.giphy.com\/media\/alEGxmahCCywE\/200w_s.gif","width":"200","height":"92"},"fixed_width_small":{"url":"https:\/\/media3.giphy.com\/media\/alEGxmahCCywE\/100w.gif","width":"100","height":"46","size":"36886","mp4":"https:\/\/media3.giphy.com\/media\/alEGxmahCCywE\/100w.mp4","mp4_size":"28331","webp":"https:\/\/media3.giphy.com\/media\/alEGxmahCCywE\/100w.webp","webp_size":"8956"},"downsized_small":{"width":"498","height":"230","mp4":"https:\/\/media3.giphy.com\/media\/alEGxmahCCywE\/giphy-downsized-small.mp4","mp4_size":"38922"},"fixed_width_downsampled":{"url":"https:\/\/media3.giphy.com\/media\/alEGxmahCCywE\/200w_d.gif","width":"200","height":"92","size":"74867","webp":"https:\/\/media3.giphy.com\/media\/alEGxmahCCywE\/200w_d.webp","webp_size":"15352"},"downsized_medium":{"url":"https:\/\/media3.giphy.com\/media\/alEGxmahCCywE\/giphy.gif","width":"499","height":"230","size":"392697"},"original":{"url":"https:\/\/media3.giphy.com\/media\/alEGxmahCCywE\/giphy.gif","width":"499","height":"230","size":"392697","frames":"10","mp4":"https:\/\/media3.giphy.com\/media\/alEGxmahCCywE\/giphy.mp4","mp4_size":"24863","webp":"https:\/\/media3.giphy.com\/media\/alEGxmahCCywE\/giphy.webp","webp_size":"69674"},"fixed_height":{"url":"https:\/\/media3.giphy.com\/media\/alEGxmahCCywE\/200.gif","width":"434","height":"200","size":"126913","mp4":"https:\/\/media3.giphy.com\/media\/alEGxmahCCywE\/200.mp4","mp4_size":"8271","webp":"https:\/\/media3.giphy.com\/media\/alEGxmahCCywE\/200.webp","webp_size":"74240"},"looping":{"mp4":"https:\/\/media3.giphy.com\/media\/alEGxmahCCywE\/giphy-loop.mp4","mp4_size":"3844479"},"original_mp4":{"width":"480","height":"220","mp4":"https:\/\/media3.giphy.com\/media\/alEGxmahCCywE\/giphy.mp4","mp4_size":"24863"},"preview_gif":{"url":"https:\/\/media3.giphy.com\/media\/alEGxmahCCywE\/giphy-preview.gif","width":"145","height":"67","size":"48043"},"480w_still":{"url":"https:\/\/media2.giphy.com\/media\/alEGxmahCCywE\/480w_s.jpg","width":"480","height":"221"}},"title":"partly
+        cloudy sky GIF","_score":715.64813,"analytics":{"onload":{"url":"https:\/\/giphy_analytics.giphy.com\/simple_analytics?response_id=5c2fa649795a566959d9a5cb&event_type=GIF_SEARCH&gif_id=alEGxmahCCywE&action_type=SEEN"},"onclick":{"url":"https:\/\/giphy_analytics.giphy.com\/simple_analytics?response_id=5c2fa649795a566959d9a5cb&event_type=GIF_SEARCH&gif_id=alEGxmahCCywE&action_type=CLICK"},"onsent":{"url":"https:\/\/giphy_analytics.giphy.com\/simple_analytics?response_id=5c2fa649795a566959d9a5cb&event_type=GIF_SEARCH&gif_id=alEGxmahCCywE&action_type=SENT"}}}],"pagination":{"total_count":476,"count":1,"offset":0},"meta":{"status":200,"msg":"OK","response_id":"5c2fa649795a566959d9a5cb"}}'
+    http_version: 
+  recorded_at: Fri, 04 Jan 2019 18:32:09 GMT
+- request:
+    method: get
+    uri: http://api.giphy.com/v1/gifs/search?api_key=RuvPSy2VZTKtS5P48tIy7RVyb3b2PTXk&limit=1&q=Mostly%20cloudy%20starting%20in%20the%20afternoon.
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      X-Ratelimit-Limit-Hour:
+      - '42'
+      X-Ratelimit-Remaining-Hour:
+      - '36.545833333333'
+      X-Ratelimit-Limit-Day:
+      - '1000'
+      X-Ratelimit-Remaining-Day:
+      - '984'
+      X-Robots-Tag:
+      - noindex
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, DELETE, OPTIONS
+      Access-Control-Allow-Headers:
+      - Content-Type, Accept, x-requested-with, cache-control
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - max-age=30
+      Content-Length:
+      - '1112'
+      Accept-Ranges:
+      - bytes
+      Date:
+      - Fri, 04 Jan 2019 18:32:09 GMT
+      Age:
+      - '96'
+      Connection:
+      - keep-alive
+      X-Served-By:
+      - cache-iad2121-IAD, cache-ord1741-ORD
+      X-Cache-Hits:
+      - 1, 1
+      X-Timer:
+      - S1546626729.077928,VS0,VE0
+      Vary:
+      - Accept-Encoding
+    body:
+      encoding: ASCII-8BIT
+      string: '{"data":[{"type":"gif","id":"63xBFHKNVjZlu","slug":"dark-castle-63xBFHKNVjZlu","url":"https:\/\/giphy.com\/gifs\/dark-castle-63xBFHKNVjZlu","bitly_gif_url":"https:\/\/gph.is\/13FiiZM","bitly_url":"https:\/\/gph.is\/13FiiZM","embed_url":"https:\/\/giphy.com\/embed\/63xBFHKNVjZlu","username":"","source":"https:\/\/professorsx.tumblr.com\/post\/54926278972\/k-miyu-the-pirates-in-an-adventure-with","rating":"y","content_url":"","source_tld":"professorsx.tumblr.com","source_post_url":"https:\/\/professorsx.tumblr.com\/post\/54926278972\/k-miyu-the-pirates-in-an-adventure-with","is_sticker":0,"import_datetime":"2013-07-24
+        19:29:51","trending_datetime":"1970-01-01 00:00:00","images":{"fixed_height_still":{"url":"https:\/\/media3.giphy.com\/media\/63xBFHKNVjZlu\/200_s.gif","width":"556","height":"200"},"original_still":{"url":"https:\/\/media3.giphy.com\/media\/63xBFHKNVjZlu\/giphy_s.gif","width":"500","height":"180"},"fixed_width":{"url":"https:\/\/media3.giphy.com\/media\/63xBFHKNVjZlu\/200w.gif","width":"200","height":"72","size":"100541","mp4":"https:\/\/media3.giphy.com\/media\/63xBFHKNVjZlu\/200w.mp4","mp4_size":"12347","webp":"https:\/\/media3.giphy.com\/media\/63xBFHKNVjZlu\/200w.webp","webp_size":"38194"},"fixed_height_small_still":{"url":"https:\/\/media3.giphy.com\/media\/63xBFHKNVjZlu\/100_s.gif","width":"278","height":"100"},"fixed_height_downsampled":{"url":"https:\/\/media3.giphy.com\/media\/63xBFHKNVjZlu\/200_d.gif","width":"556","height":"200","size":"303219","webp":"https:\/\/media3.giphy.com\/media\/63xBFHKNVjZlu\/200_d.webp","webp_size":"38820"},"preview":{"width":"500","height":"180","mp4":"https:\/\/media3.giphy.com\/media\/63xBFHKNVjZlu\/giphy-preview.mp4","mp4_size":"38800"},"fixed_height_small":{"url":"https:\/\/media3.giphy.com\/media\/63xBFHKNVjZlu\/100.gif","width":"278","height":"100","size":"398724","mp4":"https:\/\/media3.giphy.com\/media\/63xBFHKNVjZlu\/100.mp4","mp4_size":"134123","webp":"https:\/\/media3.giphy.com\/media\/63xBFHKNVjZlu\/100.webp","webp_size":"55174"},"downsized_still":{"url":"https:\/\/media3.giphy.com\/media\/63xBFHKNVjZlu\/giphy-downsized_s.gif","width":"500","height":"180","size":"45510"},"downsized":{"url":"https:\/\/media3.giphy.com\/media\/63xBFHKNVjZlu\/giphy-downsized.gif","width":"500","height":"180","size":"982106"},"downsized_large":{"url":"https:\/\/media3.giphy.com\/media\/63xBFHKNVjZlu\/giphy.gif","width":"500","height":"180","size":"982106"},"fixed_width_small_still":{"url":"https:\/\/media3.giphy.com\/media\/63xBFHKNVjZlu\/100w_s.gif","width":"100","height":"36"},"preview_webp":{"url":"https:\/\/media3.giphy.com\/media\/63xBFHKNVjZlu\/giphy-preview.webp","width":"483","height":"174","size":"48354"},"fixed_width_still":{"url":"https:\/\/media3.giphy.com\/media\/63xBFHKNVjZlu\/200w_s.gif","width":"200","height":"72"},"fixed_width_small":{"url":"https:\/\/media3.giphy.com\/media\/63xBFHKNVjZlu\/100w.gif","width":"100","height":"36","size":"100541","mp4":"https:\/\/media3.giphy.com\/media\/63xBFHKNVjZlu\/100w.mp4","mp4_size":"36809","webp":"https:\/\/media3.giphy.com\/media\/63xBFHKNVjZlu\/100w.webp","webp_size":"14592"},"downsized_small":{"width":"500","height":"180","mp4":"https:\/\/media3.giphy.com\/media\/63xBFHKNVjZlu\/giphy-downsized-small.mp4","mp4_size":"38800"},"fixed_width_downsampled":{"url":"https:\/\/media3.giphy.com\/media\/63xBFHKNVjZlu\/200w_d.gif","width":"200","height":"72","size":"58287","webp":"https:\/\/media3.giphy.com\/media\/63xBFHKNVjZlu\/200w_d.webp","webp_size":"10260"},"downsized_medium":{"url":"https:\/\/media3.giphy.com\/media\/63xBFHKNVjZlu\/giphy.gif","width":"500","height":"180","size":"982106"},"original":{"url":"https:\/\/media3.giphy.com\/media\/63xBFHKNVjZlu\/giphy.gif","width":"500","height":"180","size":"982106","frames":"24","mp4":"https:\/\/media3.giphy.com\/media\/63xBFHKNVjZlu\/giphy.mp4","mp4_size":"25800","webp":"https:\/\/media3.giphy.com\/media\/63xBFHKNVjZlu\/giphy.webp","webp_size":"130220"},"fixed_height":{"url":"https:\/\/media3.giphy.com\/media\/63xBFHKNVjZlu\/200.gif","width":"556","height":"200","size":"398724","mp4":"https:\/\/media3.giphy.com\/media\/63xBFHKNVjZlu\/200.mp4","mp4_size":"11326","webp":"https:\/\/media3.giphy.com\/media\/63xBFHKNVjZlu\/200.webp","webp_size":"148758"},"looping":{"mp4":"https:\/\/media3.giphy.com\/media\/63xBFHKNVjZlu\/giphy-loop.mp4","mp4_size":"3796141"},"original_mp4":{"width":"480","height":"172","mp4":"https:\/\/media3.giphy.com\/media\/63xBFHKNVjZlu\/giphy.mp4","mp4_size":"25800"},"preview_gif":{"url":"https:\/\/media3.giphy.com\/media\/63xBFHKNVjZlu\/giphy-preview.gif","width":"167","height":"60","size":"47679"},"480w_still":{"url":"https:\/\/media3.giphy.com\/media\/63xBFHKNVjZlu\/480w_s.jpg","width":"480","height":"173"}},"title":"mostly
+        cloudy dark GIF","_score":714.58124,"analytics":{"onload":{"url":"https:\/\/giphy_analytics.giphy.com\/simple_analytics?response_id=5c2fa649795a566959772a8f&event_type=GIF_SEARCH&gif_id=63xBFHKNVjZlu&action_type=SEEN"},"onclick":{"url":"https:\/\/giphy_analytics.giphy.com\/simple_analytics?response_id=5c2fa649795a566959772a8f&event_type=GIF_SEARCH&gif_id=63xBFHKNVjZlu&action_type=CLICK"},"onsent":{"url":"https:\/\/giphy_analytics.giphy.com\/simple_analytics?response_id=5c2fa649795a566959772a8f&event_type=GIF_SEARCH&gif_id=63xBFHKNVjZlu&action_type=SENT"}}}],"pagination":{"total_count":4514,"count":1,"offset":0},"meta":{"status":200,"msg":"OK","response_id":"5c2fa649795a566959772a8f"}}'
+    http_version: 
+  recorded_at: Fri, 04 Jan 2019 18:32:09 GMT
+- request:
+    method: get
+    uri: http://api.giphy.com/v1/gifs/search?api_key=RuvPSy2VZTKtS5P48tIy7RVyb3b2PTXk&limit=1&q=Partly%20cloudy%20throughout%20the%20day.
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      X-Ratelimit-Limit-Hour:
+      - '42'
+      X-Ratelimit-Remaining-Hour:
+      - '41'
+      X-Ratelimit-Limit-Day:
+      - '1000'
+      X-Ratelimit-Remaining-Day:
+      - '999'
+      X-Robots-Tag:
+      - noindex
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, DELETE, OPTIONS
+      Access-Control-Allow-Headers:
+      - Content-Type, Accept, x-requested-with, cache-control
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - max-age=30
+      Content-Length:
+      - '1124'
+      Accept-Ranges:
+      - bytes
+      Date:
+      - Fri, 04 Jan 2019 18:32:09 GMT
+      Age:
+      - '96'
+      Connection:
+      - keep-alive
+      X-Served-By:
+      - cache-iad2128-IAD, cache-ord1742-ORD
+      X-Cache-Hits:
+      - 1, 1
+      X-Timer:
+      - S1546626729.140979,VS0,VE1
+      Vary:
+      - Accept-Encoding
+    body:
+      encoding: ASCII-8BIT
+      string: '{"data":[{"type":"gif","id":"aQ7kognlRPDzi","slug":"beach-clouds-aQ7kognlRPDzi","url":"https:\/\/giphy.com\/gifs\/beach-clouds-aQ7kognlRPDzi","bitly_gif_url":"https:\/\/gph.is\/28LBLPK","bitly_url":"https:\/\/gph.is\/28LBLPK","embed_url":"https:\/\/giphy.com\/embed\/aQ7kognlRPDzi","username":"","source":"https:\/\/www.transformtomorrow.com\/post\/117091919153\/happy-earth-day","rating":"g","content_url":"","source_tld":"www.transformtomorrow.com","source_post_url":"https:\/\/www.transformtomorrow.com\/post\/117091919153\/happy-earth-day","is_sticker":0,"import_datetime":"2016-06-21
+        18:29:37","trending_datetime":"1970-01-01 00:00:00","images":{"fixed_height_still":{"url":"https:\/\/media0.giphy.com\/media\/aQ7kognlRPDzi\/200_s.gif","width":"356","height":"200"},"original_still":{"url":"https:\/\/media0.giphy.com\/media\/aQ7kognlRPDzi\/giphy_s.gif","width":"500","height":"281"},"fixed_width":{"url":"https:\/\/media0.giphy.com\/media\/aQ7kognlRPDzi\/200w.gif","width":"200","height":"112","size":"269381","mp4":"https:\/\/media0.giphy.com\/media\/aQ7kognlRPDzi\/200w.mp4","mp4_size":"40112","webp":"https:\/\/media0.giphy.com\/media\/aQ7kognlRPDzi\/200w.webp","webp_size":"115248"},"fixed_height_small_still":{"url":"https:\/\/media0.giphy.com\/media\/aQ7kognlRPDzi\/100_s.gif","width":"178","height":"100"},"fixed_height_downsampled":{"url":"https:\/\/media0.giphy.com\/media\/aQ7kognlRPDzi\/200_d.gif","width":"356","height":"200","size":"256865","webp":"https:\/\/media0.giphy.com\/media\/aQ7kognlRPDzi\/200_d.webp","webp_size":"96020"},"preview":{"width":"150","height":"84","mp4":"https:\/\/media0.giphy.com\/media\/aQ7kognlRPDzi\/giphy-preview.mp4","mp4_size":"36601"},"fixed_height_small":{"url":"https:\/\/media0.giphy.com\/media\/aQ7kognlRPDzi\/100.gif","width":"178","height":"100","size":"230195","mp4":"https:\/\/media0.giphy.com\/media\/aQ7kognlRPDzi\/100.mp4","mp4_size":"32207","webp":"https:\/\/media0.giphy.com\/media\/aQ7kognlRPDzi\/100.webp","webp_size":"100032"},"downsized_still":{"url":"https:\/\/media0.giphy.com\/media\/aQ7kognlRPDzi\/giphy-downsized_s.gif","width":"500","height":"281","size":"90053"},"downsized":{"url":"https:\/\/media0.giphy.com\/media\/aQ7kognlRPDzi\/giphy-downsized.gif","width":"500","height":"281","size":"1766442"},"downsized_large":{"url":"https:\/\/media0.giphy.com\/media\/aQ7kognlRPDzi\/giphy.gif","width":"500","height":"281","size":"1766442"},"fixed_width_small_still":{"url":"https:\/\/media0.giphy.com\/media\/aQ7kognlRPDzi\/100w_s.gif","width":"100","height":"56"},"preview_webp":{"url":"https:\/\/media0.giphy.com\/media\/aQ7kognlRPDzi\/giphy-preview.webp","width":"183","height":"103","size":"48404"},"fixed_width_still":{"url":"https:\/\/media0.giphy.com\/media\/aQ7kognlRPDzi\/200w_s.gif","width":"200","height":"112"},"fixed_width_small":{"url":"https:\/\/media0.giphy.com\/media\/aQ7kognlRPDzi\/100w.gif","width":"100","height":"56","size":"83775","mp4":"https:\/\/media0.giphy.com\/media\/aQ7kognlRPDzi\/100w.mp4","mp4_size":"13274","webp":"https:\/\/media0.giphy.com\/media\/aQ7kognlRPDzi\/100w.webp","webp_size":"38188"},"downsized_small":{"width":"450","height":"252","mp4":"https:\/\/media0.giphy.com\/media\/aQ7kognlRPDzi\/giphy-downsized-small.mp4","mp4_size":"173778"},"fixed_width_downsampled":{"url":"https:\/\/media0.giphy.com\/media\/aQ7kognlRPDzi\/200w_d.gif","width":"200","height":"112","size":"84667","webp":"https:\/\/media0.giphy.com\/media\/aQ7kognlRPDzi\/200w_d.webp","webp_size":"35014"},"downsized_medium":{"url":"https:\/\/media0.giphy.com\/media\/aQ7kognlRPDzi\/giphy.gif","width":"500","height":"281","size":"1766442"},"original":{"url":"https:\/\/media0.giphy.com\/media\/aQ7kognlRPDzi\/giphy.gif","width":"500","height":"281","size":"1766442","frames":"20","mp4":"https:\/\/media0.giphy.com\/media\/aQ7kognlRPDzi\/giphy.mp4","mp4_size":"190595","webp":"https:\/\/media0.giphy.com\/media\/aQ7kognlRPDzi\/giphy.webp","webp_size":"696226"},"fixed_height":{"url":"https:\/\/media0.giphy.com\/media\/aQ7kognlRPDzi\/200.gif","width":"356","height":"200","size":"824245","mp4":"https:\/\/media0.giphy.com\/media\/aQ7kognlRPDzi\/200.mp4","mp4_size":"103418","webp":"https:\/\/media0.giphy.com\/media\/aQ7kognlRPDzi\/200.webp","webp_size":"323392"},"looping":{"mp4":"https:\/\/media0.giphy.com\/media\/aQ7kognlRPDzi\/giphy-loop.mp4","mp4_size":"1473656"},"original_mp4":{"width":"480","height":"268","mp4":"https:\/\/media0.giphy.com\/media\/aQ7kognlRPDzi\/giphy.mp4","mp4_size":"190595"},"preview_gif":{"url":"https:\/\/media0.giphy.com\/media\/aQ7kognlRPDzi\/giphy-preview.gif","width":"119","height":"67","size":"47749"},"480w_still":{"url":"https:\/\/media3.giphy.com\/media\/aQ7kognlRPDzi\/480w_s.jpg","width":"480","height":"270"}},"title":"partly
+        cloudy beach GIF","_score":734.74054,"analytics":{"onload":{"url":"https:\/\/giphy_analytics.giphy.com\/simple_analytics?response_id=5c2fa649795a56695960588a&event_type=GIF_SEARCH&gif_id=aQ7kognlRPDzi&action_type=SEEN"},"onclick":{"url":"https:\/\/giphy_analytics.giphy.com\/simple_analytics?response_id=5c2fa649795a56695960588a&event_type=GIF_SEARCH&gif_id=aQ7kognlRPDzi&action_type=CLICK"},"onsent":{"url":"https:\/\/giphy_analytics.giphy.com\/simple_analytics?response_id=5c2fa649795a56695960588a&event_type=GIF_SEARCH&gif_id=aQ7kognlRPDzi&action_type=SENT"}}}],"pagination":{"total_count":46845,"count":1,"offset":0},"meta":{"status":200,"msg":"OK","response_id":"5c2fa649795a56695960588a"}}'
+    http_version: 
+  recorded_at: Fri, 04 Jan 2019 18:32:09 GMT
+- request:
+    method: get
+    uri: http://api.giphy.com/v1/gifs/search?api_key=RuvPSy2VZTKtS5P48tIy7RVyb3b2PTXk&limit=1&q=Clear%20throughout%20the%20day.
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      X-Ratelimit-Limit-Hour:
+      - '42'
+      X-Ratelimit-Remaining-Hour:
+      - '36.545833333333'
+      X-Ratelimit-Limit-Day:
+      - '1000'
+      X-Ratelimit-Remaining-Day:
+      - '984'
+      X-Robots-Tag:
+      - noindex
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, DELETE, OPTIONS
+      Access-Control-Allow-Headers:
+      - Content-Type, Accept, x-requested-with, cache-control
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - max-age=30
+      Content-Length:
+      - '1072'
+      Accept-Ranges:
+      - bytes
+      Date:
+      - Fri, 04 Jan 2019 18:32:09 GMT
+      Age:
+      - '96'
+      Connection:
+      - keep-alive
+      X-Served-By:
+      - cache-iad2139-IAD, cache-ord1743-ORD
+      X-Cache-Hits:
+      - 1, 1
+      X-Timer:
+      - S1546626729.223795,VS0,VE0
+      Vary:
+      - Accept-Encoding
+    body:
+      encoding: ASCII-8BIT
+      string: '{"data":[{"type":"gif","id":"ivcVZnZAEqhs4","slug":"water-ocean-sea-ivcVZnZAEqhs4","url":"https:\/\/giphy.com\/gifs\/water-ocean-sea-ivcVZnZAEqhs4","bitly_gif_url":"https:\/\/gph.is\/N3vnqW","bitly_url":"https:\/\/gph.is\/N3vnqW","embed_url":"https:\/\/giphy.com\/embed\/ivcVZnZAEqhs4","username":"","source":"https:\/\/www.tumblr.com","rating":"g","content_url":"","source_tld":"www.tumblr.com","source_post_url":"https:\/\/www.tumblr.com","is_sticker":0,"import_datetime":"2014-02-17
+        20:11:30","trending_datetime":"1970-01-01 00:00:00","images":{"fixed_height_still":{"url":"https:\/\/media2.giphy.com\/media\/ivcVZnZAEqhs4\/200_s.gif","width":"415","height":"200"},"original_still":{"url":"https:\/\/media2.giphy.com\/media\/ivcVZnZAEqhs4\/giphy_s.gif","width":"400","height":"193"},"fixed_width":{"url":"https:\/\/media2.giphy.com\/media\/ivcVZnZAEqhs4\/200w.gif","width":"200","height":"97","size":"66511","mp4":"https:\/\/media2.giphy.com\/media\/ivcVZnZAEqhs4\/200w.mp4","mp4_size":"14403","webp":"https:\/\/media2.giphy.com\/media\/ivcVZnZAEqhs4\/200w.webp","webp_size":"60830"},"fixed_height_small_still":{"url":"https:\/\/media2.giphy.com\/media\/ivcVZnZAEqhs4\/100_s.gif","width":"207","height":"100"},"fixed_height_downsampled":{"url":"https:\/\/media2.giphy.com\/media\/ivcVZnZAEqhs4\/200_d.gif","width":"415","height":"200","size":"344305","webp":"https:\/\/media2.giphy.com\/media\/ivcVZnZAEqhs4\/200_d.webp","webp_size":"111710"},"preview":{"width":"360","height":"172","mp4":"https:\/\/media2.giphy.com\/media\/ivcVZnZAEqhs4\/giphy-preview.mp4","mp4_size":"44284"},"fixed_height_small":{"url":"https:\/\/media2.giphy.com\/media\/ivcVZnZAEqhs4\/100.gif","width":"207","height":"100","size":"209520","mp4":"https:\/\/media2.giphy.com\/media\/ivcVZnZAEqhs4\/100.mp4","mp4_size":"116575","webp":"https:\/\/media2.giphy.com\/media\/ivcVZnZAEqhs4\/100.webp","webp_size":"61470"},"downsized_still":{"url":"https:\/\/media2.giphy.com\/media\/ivcVZnZAEqhs4\/giphy-downsized_s.gif","width":"400","height":"193","size":"54489"},"downsized":{"url":"https:\/\/media2.giphy.com\/media\/ivcVZnZAEqhs4\/giphy-downsized.gif","width":"400","height":"193","size":"653107"},"downsized_large":{"url":"https:\/\/media2.giphy.com\/media\/ivcVZnZAEqhs4\/giphy.gif","width":"400","height":"193","size":"653107"},"fixed_width_small_still":{"url":"https:\/\/media2.giphy.com\/media\/ivcVZnZAEqhs4\/100w_s.gif","width":"100","height":"48"},"preview_webp":{"url":"https:\/\/media2.giphy.com\/media\/ivcVZnZAEqhs4\/giphy-preview.webp","width":"218","height":"105","size":"49440"},"fixed_width_still":{"url":"https:\/\/media2.giphy.com\/media\/ivcVZnZAEqhs4\/200w_s.gif","width":"200","height":"97"},"fixed_width_small":{"url":"https:\/\/media2.giphy.com\/media\/ivcVZnZAEqhs4\/100w.gif","width":"100","height":"48","size":"66511","mp4":"https:\/\/media2.giphy.com\/media\/ivcVZnZAEqhs4\/100w.mp4","mp4_size":"34531","webp":"https:\/\/media2.giphy.com\/media\/ivcVZnZAEqhs4\/100w.webp","webp_size":"15446"},"downsized_small":{"width":"400","height":"192","mp4":"https:\/\/media2.giphy.com\/media\/ivcVZnZAEqhs4\/giphy-downsized-small.mp4","mp4_size":"61306"},"fixed_width_downsampled":{"url":"https:\/\/media2.giphy.com\/media\/ivcVZnZAEqhs4\/200w_d.gif","width":"200","height":"97","size":"99855","webp":"https:\/\/media2.giphy.com\/media\/ivcVZnZAEqhs4\/200w_d.webp","webp_size":"30852"},"downsized_medium":{"url":"https:\/\/media2.giphy.com\/media\/ivcVZnZAEqhs4\/giphy.gif","width":"400","height":"193","size":"653107"},"original":{"url":"https:\/\/media2.giphy.com\/media\/ivcVZnZAEqhs4\/giphy.gif","width":"400","height":"193","size":"653107","frames":"12","mp4":"https:\/\/media2.giphy.com\/media\/ivcVZnZAEqhs4\/giphy.mp4","mp4_size":"62406","webp":"https:\/\/media2.giphy.com\/media\/ivcVZnZAEqhs4\/giphy.webp","webp_size":"208180"},"fixed_height":{"url":"https:\/\/media2.giphy.com\/media\/ivcVZnZAEqhs4\/200.gif","width":"415","height":"200","size":"209520","mp4":"https:\/\/media2.giphy.com\/media\/ivcVZnZAEqhs4\/200.mp4","mp4_size":"16149","webp":"https:\/\/media2.giphy.com\/media\/ivcVZnZAEqhs4\/200.webp","webp_size":"221844"},"looping":{"mp4":"https:\/\/media2.giphy.com\/media\/ivcVZnZAEqhs4\/giphy-loop.mp4","mp4_size":"4716705"},"original_mp4":{"width":"480","height":"230","mp4":"https:\/\/media2.giphy.com\/media\/ivcVZnZAEqhs4\/giphy.mp4","mp4_size":"62406"},"preview_gif":{"url":"https:\/\/media2.giphy.com\/media\/ivcVZnZAEqhs4\/giphy-preview.gif","width":"139","height":"67","size":"48040"},"480w_still":{"url":"https:\/\/media0.giphy.com\/media\/ivcVZnZAEqhs4\/480w_s.jpg","width":"480","height":"232"}},"title":"clear
+        water GIF","_score":413.452,"analytics":{"onload":{"url":"https:\/\/giphy_analytics.giphy.com\/simple_analytics?response_id=5c2fa64a494f51435198351c&event_type=GIF_SEARCH&gif_id=ivcVZnZAEqhs4&action_type=SEEN"},"onclick":{"url":"https:\/\/giphy_analytics.giphy.com\/simple_analytics?response_id=5c2fa64a494f51435198351c&event_type=GIF_SEARCH&gif_id=ivcVZnZAEqhs4&action_type=CLICK"},"onsent":{"url":"https:\/\/giphy_analytics.giphy.com\/simple_analytics?response_id=5c2fa64a494f51435198351c&event_type=GIF_SEARCH&gif_id=ivcVZnZAEqhs4&action_type=SENT"}}}],"pagination":{"total_count":47115,"count":1,"offset":0},"meta":{"status":200,"msg":"OK","response_id":"5c2fa64a494f51435198351c"}}'
+    http_version: 
+  recorded_at: Fri, 04 Jan 2019 18:32:09 GMT
+- request:
+    method: get
+    uri: http://api.giphy.com/v1/gifs/search?api_key=RuvPSy2VZTKtS5P48tIy7RVyb3b2PTXk&limit=1&q=Partly%20cloudy%20in%20the%20morning.
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      X-Ratelimit-Limit-Hour:
+      - '42'
+      X-Ratelimit-Remaining-Hour:
+      - '41'
+      X-Ratelimit-Limit-Day:
+      - '1000'
+      X-Ratelimit-Remaining-Day:
+      - '999'
+      X-Robots-Tag:
+      - noindex
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, DELETE, OPTIONS
+      Access-Control-Allow-Headers:
+      - Content-Type, Accept, x-requested-with, cache-control
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - max-age=30
+      Content-Length:
+      - '1292'
+      Accept-Ranges:
+      - bytes
+      Date:
+      - Fri, 04 Jan 2019 18:32:09 GMT
+      Age:
+      - '96'
+      Connection:
+      - keep-alive
+      X-Served-By:
+      - cache-iad2142-IAD, cache-ord1737-ORD
+      X-Cache-Hits:
+      - 1, 1
+      X-Timer:
+      - S1546626729.286293,VS0,VE1
+      Vary:
+      - Accept-Encoding
+    body:
+      encoding: ASCII-8BIT
+      string: '{"data":[{"type":"gif","id":"3oz8xsTTDHL2D8Hluw","slug":"3oz8xsTTDHL2D8Hluw","url":"https:\/\/giphy.com\/gifs\/3oz8xsTTDHL2D8Hluw","bitly_gif_url":"https:\/\/gph.is\/2gLQdNJ","bitly_url":"https:\/\/gph.is\/2gLQdNJ","embed_url":"https:\/\/giphy.com\/embed\/3oz8xsTTDHL2D8Hluw","username":"thx4bnu","source":"","rating":"g","content_url":"","source_tld":"","source_post_url":"","is_sticker":0,"import_datetime":"2016-12-14
+        19:04:07","trending_datetime":"0000-00-00 00:00:00","user":{"avatar_url":"https:\/\/media1.giphy.com\/avatars\/thx4bnu\/jFTaEa0sCvyE.gif","banner_url":"https:\/\/media1.giphy.com\/headers\/thx4bnu\/5HWgRC9A18Ox.jpeg","banner_image":"https:\/\/media1.giphy.com\/headers\/thx4bnu\/5HWgRC9A18Ox.jpeg","profile_url":"https:\/\/giphy.com\/thx4bnu\/","username":"thx4bnu","display_name":"Bryan
+        Unger","is_verified":true},"images":{"fixed_height_still":{"url":"https:\/\/media3.giphy.com\/media\/3oz8xsTTDHL2D8Hluw\/200_s.gif","width":"356","height":"200","size":"33034"},"original_still":{"url":"https:\/\/media3.giphy.com\/media\/3oz8xsTTDHL2D8Hluw\/giphy_s.gif","width":"480","height":"270","size":"54817"},"fixed_width":{"url":"https:\/\/media3.giphy.com\/media\/3oz8xsTTDHL2D8Hluw\/200w.gif","width":"200","height":"112","size":"2569036","mp4":"https:\/\/media3.giphy.com\/media\/3oz8xsTTDHL2D8Hluw\/200w.mp4","mp4_size":"117795","webp":"https:\/\/media3.giphy.com\/media\/3oz8xsTTDHL2D8Hluw\/200w.webp","webp_size":"740664"},"fixed_height_small_still":{"url":"https:\/\/media3.giphy.com\/media\/3oz8xsTTDHL2D8Hluw\/100_s.gif","width":"178","height":"100","size":"9998"},"fixed_height_downsampled":{"url":"https:\/\/media3.giphy.com\/media\/3oz8xsTTDHL2D8Hluw\/200_d.gif","width":"356","height":"200","size":"200713","webp":"https:\/\/media3.giphy.com\/media\/3oz8xsTTDHL2D8Hluw\/200_d.webp","webp_size":"46892"},"preview":{"width":"376","height":"210","mp4":"https:\/\/media3.giphy.com\/media\/3oz8xsTTDHL2D8Hluw\/giphy-preview.mp4","mp4_size":"27161"},"fixed_height_small":{"url":"https:\/\/media3.giphy.com\/media\/3oz8xsTTDHL2D8Hluw\/100.gif","width":"178","height":"100","size":"1821248","mp4":"https:\/\/media3.giphy.com\/media\/3oz8xsTTDHL2D8Hluw\/100.mp4","mp4_size":"101975","webp":"https:\/\/media3.giphy.com\/media\/3oz8xsTTDHL2D8Hluw\/100.webp","webp_size":"624840"},"downsized_still":{"url":"https:\/\/media3.giphy.com\/media\/3oz8xsTTDHL2D8Hluw\/giphy-tumblr_s.gif","width":"250","height":"140","size":"18224"},"downsized":{"url":"https:\/\/media3.giphy.com\/media\/3oz8xsTTDHL2D8Hluw\/giphy-tumblr.gif","width":"250","height":"140","size":"856566"},"downsized_large":{"url":"https:\/\/media3.giphy.com\/media\/3oz8xsTTDHL2D8Hluw\/giphy-downsized-large.gif","width":"480","height":"270","size":"5044285"},"fixed_width_small_still":{"url":"https:\/\/media3.giphy.com\/media\/3oz8xsTTDHL2D8Hluw\/100w_s.gif","width":"100","height":"56","size":"4739"},"preview_webp":{"url":"https:\/\/media3.giphy.com\/media\/3oz8xsTTDHL2D8Hluw\/giphy-preview.webp","width":"272","height":"153","size":"47610"},"fixed_width_still":{"url":"https:\/\/media3.giphy.com\/media\/3oz8xsTTDHL2D8Hluw\/200w_s.gif","width":"200","height":"112","size":"13449"},"480w_still":{"url":"https:\/\/media3.giphy.com\/media\/3oz8xsTTDHL2D8Hluw\/480w_s.jpg","width":"480","height":"270","size":"10980"},"fixed_width_small":{"url":"https:\/\/media3.giphy.com\/media\/3oz8xsTTDHL2D8Hluw\/100w.gif","width":"100","height":"56","size":"727822","mp4":"https:\/\/media3.giphy.com\/media\/3oz8xsTTDHL2D8Hluw\/100w.mp4","mp4_size":"43584","webp":"https:\/\/media3.giphy.com\/media\/3oz8xsTTDHL2D8Hluw\/100w.webp","webp_size":"290556"},"downsized_small":{"width":"228","height":"128","mp4":"https:\/\/media3.giphy.com\/media\/3oz8xsTTDHL2D8Hluw\/giphy-downsized-small.mp4","mp4_size":"169250"},"fixed_width_downsampled":{"url":"https:\/\/media3.giphy.com\/media\/3oz8xsTTDHL2D8Hluw\/200w_d.gif","width":"200","height":"112","size":"77982","webp":"https:\/\/media3.giphy.com\/media\/3oz8xsTTDHL2D8Hluw\/200w_d.webp","webp_size":"19430"},"downsized_medium":{"url":"https:\/\/media3.giphy.com\/media\/3oz8xsTTDHL2D8Hluw\/giphy-downsized-medium.gif","width":"480","height":"270","size":"3876956"},"original":{"url":"https:\/\/media3.giphy.com\/media\/3oz8xsTTDHL2D8Hluw\/giphy.gif","width":"480","height":"270","size":"11814142","frames":"226","mp4":"https:\/\/media3.giphy.com\/media\/3oz8xsTTDHL2D8Hluw\/giphy.mp4","mp4_size":"556883","webp":"https:\/\/media3.giphy.com\/media\/3oz8xsTTDHL2D8Hluw\/giphy.webp","webp_size":"2663244","hash":"dadee31cc1e71fb9ed0441536c239abd"},"fixed_height":{"url":"https:\/\/media3.giphy.com\/media\/3oz8xsTTDHL2D8Hluw\/200.gif","width":"356","height":"200","size":"7001519","mp4":"https:\/\/media3.giphy.com\/media\/3oz8xsTTDHL2D8Hluw\/200.mp4","mp4_size":"306776","webp":"https:\/\/media3.giphy.com\/media\/3oz8xsTTDHL2D8Hluw\/200.webp","webp_size":"1746002"},"hd":{"width":"1280","height":"720","mp4":"https:\/\/media3.giphy.com\/media\/3oz8xsTTDHL2D8Hluw\/giphy-hd.mp4","mp4_size":"3365964"},"looping":{"mp4":"https:\/\/media3.giphy.com\/media\/3oz8xsTTDHL2D8Hluw\/giphy-loop.mp4","mp4_size":"624968"},"original_mp4":{"width":"480","height":"270","mp4":"https:\/\/media3.giphy.com\/media\/3oz8xsTTDHL2D8Hluw\/giphy.mp4","mp4_size":"556883"},"preview_gif":{"url":"https:\/\/media3.giphy.com\/media\/3oz8xsTTDHL2D8Hluw\/giphy-preview.gif","width":"158","height":"89","size":"49142"}},"title":"camping
+        miami heat GIF by Bryan Unger","_score":1110.6252,"analytics":{"onload":{"url":"https:\/\/giphy_analytics.giphy.com\/simple_analytics?response_id=5c2fa64a494f5143516738a9&event_type=GIF_SEARCH&gif_id=3oz8xsTTDHL2D8Hluw&action_type=SEEN"},"onclick":{"url":"https:\/\/giphy_analytics.giphy.com\/simple_analytics?response_id=5c2fa64a494f5143516738a9&event_type=GIF_SEARCH&gif_id=3oz8xsTTDHL2D8Hluw&action_type=CLICK"},"onsent":{"url":"https:\/\/giphy_analytics.giphy.com\/simple_analytics?response_id=5c2fa64a494f5143516738a9&event_type=GIF_SEARCH&gif_id=3oz8xsTTDHL2D8Hluw&action_type=SENT"}}}],"pagination":{"total_count":7176,"count":1,"offset":0},"meta":{"status":200,"msg":"OK","response_id":"5c2fa64a494f5143516738a9"}}'
+    http_version: 
+  recorded_at: Fri, 04 Jan 2019 18:32:09 GMT
+- request:
+    method: get
+    uri: http://api.giphy.com/v1/gifs/search?api_key=RuvPSy2VZTKtS5P48tIy7RVyb3b2PTXk&limit=1&q=Mostly%20cloudy%20starting%20in%20the%20afternoon.
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      X-Ratelimit-Limit-Hour:
+      - '42'
+      X-Ratelimit-Remaining-Hour:
+      - '36.545833333333'
+      X-Ratelimit-Limit-Day:
+      - '1000'
+      X-Ratelimit-Remaining-Day:
+      - '984'
+      X-Robots-Tag:
+      - noindex
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, DELETE, OPTIONS
+      Access-Control-Allow-Headers:
+      - Content-Type, Accept, x-requested-with, cache-control
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - max-age=30
+      Content-Length:
+      - '1112'
+      Accept-Ranges:
+      - bytes
+      Date:
+      - Fri, 04 Jan 2019 18:32:09 GMT
+      Age:
+      - '96'
+      Connection:
+      - keep-alive
+      X-Served-By:
+      - cache-iad2121-IAD, cache-ord1747-ORD
+      X-Cache-Hits:
+      - 1, 1
+      X-Timer:
+      - S1546626729.350353,VS0,VE1
+      Vary:
+      - Accept-Encoding
+    body:
+      encoding: ASCII-8BIT
+      string: '{"data":[{"type":"gif","id":"63xBFHKNVjZlu","slug":"dark-castle-63xBFHKNVjZlu","url":"https:\/\/giphy.com\/gifs\/dark-castle-63xBFHKNVjZlu","bitly_gif_url":"https:\/\/gph.is\/13FiiZM","bitly_url":"https:\/\/gph.is\/13FiiZM","embed_url":"https:\/\/giphy.com\/embed\/63xBFHKNVjZlu","username":"","source":"https:\/\/professorsx.tumblr.com\/post\/54926278972\/k-miyu-the-pirates-in-an-adventure-with","rating":"y","content_url":"","source_tld":"professorsx.tumblr.com","source_post_url":"https:\/\/professorsx.tumblr.com\/post\/54926278972\/k-miyu-the-pirates-in-an-adventure-with","is_sticker":0,"import_datetime":"2013-07-24
+        19:29:51","trending_datetime":"1970-01-01 00:00:00","images":{"fixed_height_still":{"url":"https:\/\/media3.giphy.com\/media\/63xBFHKNVjZlu\/200_s.gif","width":"556","height":"200"},"original_still":{"url":"https:\/\/media3.giphy.com\/media\/63xBFHKNVjZlu\/giphy_s.gif","width":"500","height":"180"},"fixed_width":{"url":"https:\/\/media3.giphy.com\/media\/63xBFHKNVjZlu\/200w.gif","width":"200","height":"72","size":"100541","mp4":"https:\/\/media3.giphy.com\/media\/63xBFHKNVjZlu\/200w.mp4","mp4_size":"12347","webp":"https:\/\/media3.giphy.com\/media\/63xBFHKNVjZlu\/200w.webp","webp_size":"38194"},"fixed_height_small_still":{"url":"https:\/\/media3.giphy.com\/media\/63xBFHKNVjZlu\/100_s.gif","width":"278","height":"100"},"fixed_height_downsampled":{"url":"https:\/\/media3.giphy.com\/media\/63xBFHKNVjZlu\/200_d.gif","width":"556","height":"200","size":"303219","webp":"https:\/\/media3.giphy.com\/media\/63xBFHKNVjZlu\/200_d.webp","webp_size":"38820"},"preview":{"width":"500","height":"180","mp4":"https:\/\/media3.giphy.com\/media\/63xBFHKNVjZlu\/giphy-preview.mp4","mp4_size":"38800"},"fixed_height_small":{"url":"https:\/\/media3.giphy.com\/media\/63xBFHKNVjZlu\/100.gif","width":"278","height":"100","size":"398724","mp4":"https:\/\/media3.giphy.com\/media\/63xBFHKNVjZlu\/100.mp4","mp4_size":"134123","webp":"https:\/\/media3.giphy.com\/media\/63xBFHKNVjZlu\/100.webp","webp_size":"55174"},"downsized_still":{"url":"https:\/\/media3.giphy.com\/media\/63xBFHKNVjZlu\/giphy-downsized_s.gif","width":"500","height":"180","size":"45510"},"downsized":{"url":"https:\/\/media3.giphy.com\/media\/63xBFHKNVjZlu\/giphy-downsized.gif","width":"500","height":"180","size":"982106"},"downsized_large":{"url":"https:\/\/media3.giphy.com\/media\/63xBFHKNVjZlu\/giphy.gif","width":"500","height":"180","size":"982106"},"fixed_width_small_still":{"url":"https:\/\/media3.giphy.com\/media\/63xBFHKNVjZlu\/100w_s.gif","width":"100","height":"36"},"preview_webp":{"url":"https:\/\/media3.giphy.com\/media\/63xBFHKNVjZlu\/giphy-preview.webp","width":"483","height":"174","size":"48354"},"fixed_width_still":{"url":"https:\/\/media3.giphy.com\/media\/63xBFHKNVjZlu\/200w_s.gif","width":"200","height":"72"},"fixed_width_small":{"url":"https:\/\/media3.giphy.com\/media\/63xBFHKNVjZlu\/100w.gif","width":"100","height":"36","size":"100541","mp4":"https:\/\/media3.giphy.com\/media\/63xBFHKNVjZlu\/100w.mp4","mp4_size":"36809","webp":"https:\/\/media3.giphy.com\/media\/63xBFHKNVjZlu\/100w.webp","webp_size":"14592"},"downsized_small":{"width":"500","height":"180","mp4":"https:\/\/media3.giphy.com\/media\/63xBFHKNVjZlu\/giphy-downsized-small.mp4","mp4_size":"38800"},"fixed_width_downsampled":{"url":"https:\/\/media3.giphy.com\/media\/63xBFHKNVjZlu\/200w_d.gif","width":"200","height":"72","size":"58287","webp":"https:\/\/media3.giphy.com\/media\/63xBFHKNVjZlu\/200w_d.webp","webp_size":"10260"},"downsized_medium":{"url":"https:\/\/media3.giphy.com\/media\/63xBFHKNVjZlu\/giphy.gif","width":"500","height":"180","size":"982106"},"original":{"url":"https:\/\/media3.giphy.com\/media\/63xBFHKNVjZlu\/giphy.gif","width":"500","height":"180","size":"982106","frames":"24","mp4":"https:\/\/media3.giphy.com\/media\/63xBFHKNVjZlu\/giphy.mp4","mp4_size":"25800","webp":"https:\/\/media3.giphy.com\/media\/63xBFHKNVjZlu\/giphy.webp","webp_size":"130220"},"fixed_height":{"url":"https:\/\/media3.giphy.com\/media\/63xBFHKNVjZlu\/200.gif","width":"556","height":"200","size":"398724","mp4":"https:\/\/media3.giphy.com\/media\/63xBFHKNVjZlu\/200.mp4","mp4_size":"11326","webp":"https:\/\/media3.giphy.com\/media\/63xBFHKNVjZlu\/200.webp","webp_size":"148758"},"looping":{"mp4":"https:\/\/media3.giphy.com\/media\/63xBFHKNVjZlu\/giphy-loop.mp4","mp4_size":"3796141"},"original_mp4":{"width":"480","height":"172","mp4":"https:\/\/media3.giphy.com\/media\/63xBFHKNVjZlu\/giphy.mp4","mp4_size":"25800"},"preview_gif":{"url":"https:\/\/media3.giphy.com\/media\/63xBFHKNVjZlu\/giphy-preview.gif","width":"167","height":"60","size":"47679"},"480w_still":{"url":"https:\/\/media3.giphy.com\/media\/63xBFHKNVjZlu\/480w_s.jpg","width":"480","height":"173"}},"title":"mostly
+        cloudy dark GIF","_score":714.58124,"analytics":{"onload":{"url":"https:\/\/giphy_analytics.giphy.com\/simple_analytics?response_id=5c2fa649795a566959772a8f&event_type=GIF_SEARCH&gif_id=63xBFHKNVjZlu&action_type=SEEN"},"onclick":{"url":"https:\/\/giphy_analytics.giphy.com\/simple_analytics?response_id=5c2fa649795a566959772a8f&event_type=GIF_SEARCH&gif_id=63xBFHKNVjZlu&action_type=CLICK"},"onsent":{"url":"https:\/\/giphy_analytics.giphy.com\/simple_analytics?response_id=5c2fa649795a566959772a8f&event_type=GIF_SEARCH&gif_id=63xBFHKNVjZlu&action_type=SENT"}}}],"pagination":{"total_count":4514,"count":1,"offset":0},"meta":{"status":200,"msg":"OK","response_id":"5c2fa649795a566959772a8f"}}'
+    http_version: 
+  recorded_at: Fri, 04 Jan 2019 18:32:09 GMT
+- request:
+    method: get
+    uri: http://api.giphy.com/v1/gifs/search?api_key=RuvPSy2VZTKtS5P48tIy7RVyb3b2PTXk&limit=1&q=Mostly%20cloudy%20throughout%20the%20day.
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      X-Ratelimit-Limit-Hour:
+      - '42'
+      X-Ratelimit-Remaining-Hour:
+      - '41'
+      X-Ratelimit-Limit-Day:
+      - '1000'
+      X-Ratelimit-Remaining-Day:
+      - '999'
+      X-Robots-Tag:
+      - noindex
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, DELETE, OPTIONS
+      Access-Control-Allow-Headers:
+      - Content-Type, Accept, x-requested-with, cache-control
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - max-age=30
+      Content-Length:
+      - '1112'
+      Accept-Ranges:
+      - bytes
+      Date:
+      - Fri, 04 Jan 2019 18:32:09 GMT
+      Age:
+      - '95'
+      Connection:
+      - keep-alive
+      X-Served-By:
+      - cache-iad2126-IAD, cache-ord1737-ORD
+      X-Cache-Hits:
+      - 1, 1
+      X-Timer:
+      - S1546626729.419566,VS0,VE0
+      Vary:
+      - Accept-Encoding
+    body:
+      encoding: ASCII-8BIT
+      string: '{"data":[{"type":"gif","id":"63xBFHKNVjZlu","slug":"dark-castle-63xBFHKNVjZlu","url":"https:\/\/giphy.com\/gifs\/dark-castle-63xBFHKNVjZlu","bitly_gif_url":"https:\/\/gph.is\/13FiiZM","bitly_url":"https:\/\/gph.is\/13FiiZM","embed_url":"https:\/\/giphy.com\/embed\/63xBFHKNVjZlu","username":"","source":"https:\/\/professorsx.tumblr.com\/post\/54926278972\/k-miyu-the-pirates-in-an-adventure-with","rating":"y","content_url":"","source_tld":"professorsx.tumblr.com","source_post_url":"https:\/\/professorsx.tumblr.com\/post\/54926278972\/k-miyu-the-pirates-in-an-adventure-with","is_sticker":0,"import_datetime":"2013-07-24
+        19:29:51","trending_datetime":"1970-01-01 00:00:00","images":{"fixed_height_still":{"url":"https:\/\/media2.giphy.com\/media\/63xBFHKNVjZlu\/200_s.gif","width":"556","height":"200"},"original_still":{"url":"https:\/\/media2.giphy.com\/media\/63xBFHKNVjZlu\/giphy_s.gif","width":"500","height":"180"},"fixed_width":{"url":"https:\/\/media2.giphy.com\/media\/63xBFHKNVjZlu\/200w.gif","width":"200","height":"72","size":"100541","mp4":"https:\/\/media2.giphy.com\/media\/63xBFHKNVjZlu\/200w.mp4","mp4_size":"12347","webp":"https:\/\/media2.giphy.com\/media\/63xBFHKNVjZlu\/200w.webp","webp_size":"38194"},"fixed_height_small_still":{"url":"https:\/\/media2.giphy.com\/media\/63xBFHKNVjZlu\/100_s.gif","width":"278","height":"100"},"fixed_height_downsampled":{"url":"https:\/\/media2.giphy.com\/media\/63xBFHKNVjZlu\/200_d.gif","width":"556","height":"200","size":"303219","webp":"https:\/\/media2.giphy.com\/media\/63xBFHKNVjZlu\/200_d.webp","webp_size":"38820"},"preview":{"width":"500","height":"180","mp4":"https:\/\/media2.giphy.com\/media\/63xBFHKNVjZlu\/giphy-preview.mp4","mp4_size":"38800"},"fixed_height_small":{"url":"https:\/\/media2.giphy.com\/media\/63xBFHKNVjZlu\/100.gif","width":"278","height":"100","size":"398724","mp4":"https:\/\/media2.giphy.com\/media\/63xBFHKNVjZlu\/100.mp4","mp4_size":"134123","webp":"https:\/\/media2.giphy.com\/media\/63xBFHKNVjZlu\/100.webp","webp_size":"55174"},"downsized_still":{"url":"https:\/\/media2.giphy.com\/media\/63xBFHKNVjZlu\/giphy-downsized_s.gif","width":"500","height":"180","size":"45510"},"downsized":{"url":"https:\/\/media2.giphy.com\/media\/63xBFHKNVjZlu\/giphy-downsized.gif","width":"500","height":"180","size":"982106"},"downsized_large":{"url":"https:\/\/media2.giphy.com\/media\/63xBFHKNVjZlu\/giphy.gif","width":"500","height":"180","size":"982106"},"fixed_width_small_still":{"url":"https:\/\/media2.giphy.com\/media\/63xBFHKNVjZlu\/100w_s.gif","width":"100","height":"36"},"preview_webp":{"url":"https:\/\/media2.giphy.com\/media\/63xBFHKNVjZlu\/giphy-preview.webp","width":"483","height":"174","size":"48354"},"fixed_width_still":{"url":"https:\/\/media2.giphy.com\/media\/63xBFHKNVjZlu\/200w_s.gif","width":"200","height":"72"},"fixed_width_small":{"url":"https:\/\/media2.giphy.com\/media\/63xBFHKNVjZlu\/100w.gif","width":"100","height":"36","size":"100541","mp4":"https:\/\/media2.giphy.com\/media\/63xBFHKNVjZlu\/100w.mp4","mp4_size":"36809","webp":"https:\/\/media2.giphy.com\/media\/63xBFHKNVjZlu\/100w.webp","webp_size":"14592"},"downsized_small":{"width":"500","height":"180","mp4":"https:\/\/media2.giphy.com\/media\/63xBFHKNVjZlu\/giphy-downsized-small.mp4","mp4_size":"38800"},"fixed_width_downsampled":{"url":"https:\/\/media2.giphy.com\/media\/63xBFHKNVjZlu\/200w_d.gif","width":"200","height":"72","size":"58287","webp":"https:\/\/media2.giphy.com\/media\/63xBFHKNVjZlu\/200w_d.webp","webp_size":"10260"},"downsized_medium":{"url":"https:\/\/media2.giphy.com\/media\/63xBFHKNVjZlu\/giphy.gif","width":"500","height":"180","size":"982106"},"original":{"url":"https:\/\/media2.giphy.com\/media\/63xBFHKNVjZlu\/giphy.gif","width":"500","height":"180","size":"982106","frames":"24","mp4":"https:\/\/media2.giphy.com\/media\/63xBFHKNVjZlu\/giphy.mp4","mp4_size":"25800","webp":"https:\/\/media2.giphy.com\/media\/63xBFHKNVjZlu\/giphy.webp","webp_size":"130220"},"fixed_height":{"url":"https:\/\/media2.giphy.com\/media\/63xBFHKNVjZlu\/200.gif","width":"556","height":"200","size":"398724","mp4":"https:\/\/media2.giphy.com\/media\/63xBFHKNVjZlu\/200.mp4","mp4_size":"11326","webp":"https:\/\/media2.giphy.com\/media\/63xBFHKNVjZlu\/200.webp","webp_size":"148758"},"looping":{"mp4":"https:\/\/media2.giphy.com\/media\/63xBFHKNVjZlu\/giphy-loop.mp4","mp4_size":"3796141"},"original_mp4":{"width":"480","height":"172","mp4":"https:\/\/media2.giphy.com\/media\/63xBFHKNVjZlu\/giphy.mp4","mp4_size":"25800"},"preview_gif":{"url":"https:\/\/media2.giphy.com\/media\/63xBFHKNVjZlu\/giphy-preview.gif","width":"167","height":"60","size":"47679"},"480w_still":{"url":"https:\/\/media2.giphy.com\/media\/63xBFHKNVjZlu\/480w_s.jpg","width":"480","height":"173"}},"title":"mostly
+        cloudy dark GIF","_score":711.4171,"analytics":{"onload":{"url":"https:\/\/giphy_analytics.giphy.com\/simple_analytics?response_id=5c2fa64a494f514351a4f83a&event_type=GIF_SEARCH&gif_id=63xBFHKNVjZlu&action_type=SEEN"},"onclick":{"url":"https:\/\/giphy_analytics.giphy.com\/simple_analytics?response_id=5c2fa64a494f514351a4f83a&event_type=GIF_SEARCH&gif_id=63xBFHKNVjZlu&action_type=CLICK"},"onsent":{"url":"https:\/\/giphy_analytics.giphy.com\/simple_analytics?response_id=5c2fa64a494f514351a4f83a&event_type=GIF_SEARCH&gif_id=63xBFHKNVjZlu&action_type=SENT"}}}],"pagination":{"total_count":47070,"count":1,"offset":0},"meta":{"status":200,"msg":"OK","response_id":"5c2fa64a494f514351a4f83a"}}'
+    http_version: 
+  recorded_at: Fri, 04 Jan 2019 18:32:09 GMT
+- request:
+    method: get
+    uri: http://api.giphy.com/v1/gifs/search?api_key=RuvPSy2VZTKtS5P48tIy7RVyb3b2PTXk&limit=1&q=Mostly%20cloudy%20throughout%20the%20day.
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      X-Ratelimit-Limit-Hour:
+      - '42'
+      X-Ratelimit-Remaining-Hour:
+      - '41'
+      X-Ratelimit-Limit-Day:
+      - '1000'
+      X-Ratelimit-Remaining-Day:
+      - '999'
+      X-Robots-Tag:
+      - noindex
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, DELETE, OPTIONS
+      Access-Control-Allow-Headers:
+      - Content-Type, Accept, x-requested-with, cache-control
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - max-age=30
+      Content-Length:
+      - '1112'
+      Accept-Ranges:
+      - bytes
+      Date:
+      - Fri, 04 Jan 2019 18:32:09 GMT
+      Age:
+      - '95'
+      Connection:
+      - keep-alive
+      X-Served-By:
+      - cache-iad2126-IAD, cache-ord1745-ORD
+      X-Cache-Hits:
+      - 1, 1
+      X-Timer:
+      - S1546626729.479293,VS0,VE1
+      Vary:
+      - Accept-Encoding
+    body:
+      encoding: ASCII-8BIT
+      string: '{"data":[{"type":"gif","id":"63xBFHKNVjZlu","slug":"dark-castle-63xBFHKNVjZlu","url":"https:\/\/giphy.com\/gifs\/dark-castle-63xBFHKNVjZlu","bitly_gif_url":"https:\/\/gph.is\/13FiiZM","bitly_url":"https:\/\/gph.is\/13FiiZM","embed_url":"https:\/\/giphy.com\/embed\/63xBFHKNVjZlu","username":"","source":"https:\/\/professorsx.tumblr.com\/post\/54926278972\/k-miyu-the-pirates-in-an-adventure-with","rating":"y","content_url":"","source_tld":"professorsx.tumblr.com","source_post_url":"https:\/\/professorsx.tumblr.com\/post\/54926278972\/k-miyu-the-pirates-in-an-adventure-with","is_sticker":0,"import_datetime":"2013-07-24
+        19:29:51","trending_datetime":"1970-01-01 00:00:00","images":{"fixed_height_still":{"url":"https:\/\/media2.giphy.com\/media\/63xBFHKNVjZlu\/200_s.gif","width":"556","height":"200"},"original_still":{"url":"https:\/\/media2.giphy.com\/media\/63xBFHKNVjZlu\/giphy_s.gif","width":"500","height":"180"},"fixed_width":{"url":"https:\/\/media2.giphy.com\/media\/63xBFHKNVjZlu\/200w.gif","width":"200","height":"72","size":"100541","mp4":"https:\/\/media2.giphy.com\/media\/63xBFHKNVjZlu\/200w.mp4","mp4_size":"12347","webp":"https:\/\/media2.giphy.com\/media\/63xBFHKNVjZlu\/200w.webp","webp_size":"38194"},"fixed_height_small_still":{"url":"https:\/\/media2.giphy.com\/media\/63xBFHKNVjZlu\/100_s.gif","width":"278","height":"100"},"fixed_height_downsampled":{"url":"https:\/\/media2.giphy.com\/media\/63xBFHKNVjZlu\/200_d.gif","width":"556","height":"200","size":"303219","webp":"https:\/\/media2.giphy.com\/media\/63xBFHKNVjZlu\/200_d.webp","webp_size":"38820"},"preview":{"width":"500","height":"180","mp4":"https:\/\/media2.giphy.com\/media\/63xBFHKNVjZlu\/giphy-preview.mp4","mp4_size":"38800"},"fixed_height_small":{"url":"https:\/\/media2.giphy.com\/media\/63xBFHKNVjZlu\/100.gif","width":"278","height":"100","size":"398724","mp4":"https:\/\/media2.giphy.com\/media\/63xBFHKNVjZlu\/100.mp4","mp4_size":"134123","webp":"https:\/\/media2.giphy.com\/media\/63xBFHKNVjZlu\/100.webp","webp_size":"55174"},"downsized_still":{"url":"https:\/\/media2.giphy.com\/media\/63xBFHKNVjZlu\/giphy-downsized_s.gif","width":"500","height":"180","size":"45510"},"downsized":{"url":"https:\/\/media2.giphy.com\/media\/63xBFHKNVjZlu\/giphy-downsized.gif","width":"500","height":"180","size":"982106"},"downsized_large":{"url":"https:\/\/media2.giphy.com\/media\/63xBFHKNVjZlu\/giphy.gif","width":"500","height":"180","size":"982106"},"fixed_width_small_still":{"url":"https:\/\/media2.giphy.com\/media\/63xBFHKNVjZlu\/100w_s.gif","width":"100","height":"36"},"preview_webp":{"url":"https:\/\/media2.giphy.com\/media\/63xBFHKNVjZlu\/giphy-preview.webp","width":"483","height":"174","size":"48354"},"fixed_width_still":{"url":"https:\/\/media2.giphy.com\/media\/63xBFHKNVjZlu\/200w_s.gif","width":"200","height":"72"},"fixed_width_small":{"url":"https:\/\/media2.giphy.com\/media\/63xBFHKNVjZlu\/100w.gif","width":"100","height":"36","size":"100541","mp4":"https:\/\/media2.giphy.com\/media\/63xBFHKNVjZlu\/100w.mp4","mp4_size":"36809","webp":"https:\/\/media2.giphy.com\/media\/63xBFHKNVjZlu\/100w.webp","webp_size":"14592"},"downsized_small":{"width":"500","height":"180","mp4":"https:\/\/media2.giphy.com\/media\/63xBFHKNVjZlu\/giphy-downsized-small.mp4","mp4_size":"38800"},"fixed_width_downsampled":{"url":"https:\/\/media2.giphy.com\/media\/63xBFHKNVjZlu\/200w_d.gif","width":"200","height":"72","size":"58287","webp":"https:\/\/media2.giphy.com\/media\/63xBFHKNVjZlu\/200w_d.webp","webp_size":"10260"},"downsized_medium":{"url":"https:\/\/media2.giphy.com\/media\/63xBFHKNVjZlu\/giphy.gif","width":"500","height":"180","size":"982106"},"original":{"url":"https:\/\/media2.giphy.com\/media\/63xBFHKNVjZlu\/giphy.gif","width":"500","height":"180","size":"982106","frames":"24","mp4":"https:\/\/media2.giphy.com\/media\/63xBFHKNVjZlu\/giphy.mp4","mp4_size":"25800","webp":"https:\/\/media2.giphy.com\/media\/63xBFHKNVjZlu\/giphy.webp","webp_size":"130220"},"fixed_height":{"url":"https:\/\/media2.giphy.com\/media\/63xBFHKNVjZlu\/200.gif","width":"556","height":"200","size":"398724","mp4":"https:\/\/media2.giphy.com\/media\/63xBFHKNVjZlu\/200.mp4","mp4_size":"11326","webp":"https:\/\/media2.giphy.com\/media\/63xBFHKNVjZlu\/200.webp","webp_size":"148758"},"looping":{"mp4":"https:\/\/media2.giphy.com\/media\/63xBFHKNVjZlu\/giphy-loop.mp4","mp4_size":"3796141"},"original_mp4":{"width":"480","height":"172","mp4":"https:\/\/media2.giphy.com\/media\/63xBFHKNVjZlu\/giphy.mp4","mp4_size":"25800"},"preview_gif":{"url":"https:\/\/media2.giphy.com\/media\/63xBFHKNVjZlu\/giphy-preview.gif","width":"167","height":"60","size":"47679"},"480w_still":{"url":"https:\/\/media2.giphy.com\/media\/63xBFHKNVjZlu\/480w_s.jpg","width":"480","height":"173"}},"title":"mostly
+        cloudy dark GIF","_score":711.4171,"analytics":{"onload":{"url":"https:\/\/giphy_analytics.giphy.com\/simple_analytics?response_id=5c2fa64a494f514351a4f83a&event_type=GIF_SEARCH&gif_id=63xBFHKNVjZlu&action_type=SEEN"},"onclick":{"url":"https:\/\/giphy_analytics.giphy.com\/simple_analytics?response_id=5c2fa64a494f514351a4f83a&event_type=GIF_SEARCH&gif_id=63xBFHKNVjZlu&action_type=CLICK"},"onsent":{"url":"https:\/\/giphy_analytics.giphy.com\/simple_analytics?response_id=5c2fa64a494f514351a4f83a&event_type=GIF_SEARCH&gif_id=63xBFHKNVjZlu&action_type=SENT"}}}],"pagination":{"total_count":47070,"count":1,"offset":0},"meta":{"status":200,"msg":"OK","response_id":"5c2fa64a494f514351a4f83a"}}'
+    http_version: 
+  recorded_at: Fri, 04 Jan 2019 18:32:09 GMT
+recorded_with: VCR 4.0.0
