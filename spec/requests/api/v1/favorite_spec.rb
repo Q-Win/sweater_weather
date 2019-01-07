@@ -10,6 +10,7 @@ describe "favorites request" do
       expect(response).to be_successful
 
       expect(user.favorites[0].location).to eq("denver")
+      expect(user.favorites.count).to eq(1)
     end
   end
 

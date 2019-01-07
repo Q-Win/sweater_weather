@@ -19,8 +19,28 @@
         1,
         1,
         null
+      ],
+      "/Users/quinnkrug/turing/3module/sweater_weather_api/app/controllers/api/v1/favorites_controller.rb": [
+        1,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "/Users/quinnkrug/turing/3module/sweater_weather_api/app/controllers/application_controller.rb": [
+        1,
+        null
+      ],
+      "/Users/quinnkrug/turing/3module/sweater_weather_api/app/models/favorite.rb": [
+        1,
+        1,
+        null,
+        null
       ]
     },
-    "timestamp": 1546899611
+    "timestamp": 1546899690
   }
 }
