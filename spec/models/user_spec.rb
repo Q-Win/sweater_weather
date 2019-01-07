@@ -7,6 +7,11 @@ describe User, type: :model do
     xit { should validate_uniqueness_of(:email)}
   end
 
+  describe 'Relationships' do
+   xit { should have_many(:favorites) }
+ end
+
+
   it 'It can generate an API key' do
     user = User.create(email: "bob", password: "rob")
     user.generate_api_key
