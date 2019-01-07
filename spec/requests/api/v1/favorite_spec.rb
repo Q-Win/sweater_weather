@@ -14,4 +14,17 @@ describe "favorites request" do
     end
   end
 
+  it "favorite request with valid api key " do
+    VCR.use_cassette("unsuccessful_favorite_cassette") do
+      user = User.create(email: 'bob', password: 'cat', api_key: "testkey")
+
+      post '/api/v1/favorites?location=denver&api_key=wrongkey'
+
+      error = JSON.parse(response.body)
+      
+      expect(user.favorites.count).to eq(0)
+      expect(error['error']).to eq("Incorrect API key")
+    end
+  end
+
 end
