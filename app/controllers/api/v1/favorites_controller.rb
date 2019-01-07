@@ -6,6 +6,7 @@ class Api::V1::FavoritesController < ApplicationController
       render json: { :error => "Incorrect API key" }, status: 401
     else
       favorite = user.favorites.create(location: params[:location])
+      render json: { :message => "#{params[:location]} added to favorites" }, status: 200
     end
   end
 
