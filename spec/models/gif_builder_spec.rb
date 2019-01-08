@@ -26,4 +26,12 @@ describe GifBuilder do
     end
   end
 
+  it 'can get summaries of the daily forecast' do
+    VCR.use_cassette("json_id_cassette") do
+      result = GifBuilder.new("Denver").json_id
+
+      expect(result).to be_a(String)
+    end
+  end
+
 end

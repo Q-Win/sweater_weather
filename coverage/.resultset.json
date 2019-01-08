@@ -121,17 +121,25 @@
         null,
         null,
         null,
+        1,
+        1,
+        1,
+        null,
+        1,
+        null,
+        null,
+        null,
         null
       ],
       "/Users/quinnkrug/turing/3module/sweater_weather_api/app/models/gif_builder.rb": [
         1,
         null,
         1,
-        4,
+        5,
         null,
         null,
         1,
-        0,
+        1,
         null,
         null,
         1,
@@ -580,8 +588,8 @@
         1,
         null,
         null,
-        1,
-        0,
+        null,
+        null,
         null,
         null,
         1,
@@ -695,6 +703,6 @@
         null
       ]
     },
-    "timestamp": 1546987914
+    "timestamp": 1546988141
   }
 }

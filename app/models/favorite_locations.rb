@@ -4,9 +4,9 @@ class FavoriteLocations
     @user = user
   end
 
-  def json_id
-    "#{Time.now}"
-  end
+  # def json_id
+  #   "#{Time.now}"
+  # end
 
   def favorites_forecasts
     @user.favorites.map do |favorite|
