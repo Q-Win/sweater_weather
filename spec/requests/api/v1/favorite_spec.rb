@@ -32,7 +32,7 @@ describe "favorites request" do
       user = User.create(email: 'bob', password: 'cat', api_key: "testkey")
       favorite = user.favorites.create(location: "Chicago")
       favorite2 = user.favorites.create(location: "LA")
-      binding.pry 
+
       get '/api/v1/favorites?api_key=testkey'
 
       favorites = JSON.parse(response.body)
