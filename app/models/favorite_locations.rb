@@ -8,7 +8,7 @@ class FavoriteLocations
     "#{Time.now}"
   end
 
-  def favorites_forecats
+  def favorites_forecasts
     @user.favorites.map do |favorite|
       hash = {}
       hash[:location] = favorite.location

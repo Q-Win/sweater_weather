@@ -6,8 +6,7 @@ class Api::V1::FavoritesController < ApplicationController
       render json: { :error => "Incorrect API key" }, status: 401
     else
       favorites = FavoriteLocations.new(user)
-      render json: FavoriteLocationsSerializer.new(favorites)
-
+      render json: {:body => favorites.favorites_forecasts}
     end
 
 
