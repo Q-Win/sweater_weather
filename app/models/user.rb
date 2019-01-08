@@ -9,4 +9,8 @@ class User < ApplicationRecord
     self.api_key
   end
 
+  def favorite_locations_forecast
+
+  end 
+
 end
