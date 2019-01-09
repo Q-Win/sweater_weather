@@ -4,10 +4,6 @@ class FavoriteLocations
     @user = user
   end
 
-  # def json_id
-  #   "#{Time.now}"
-  # end
-
   def favorites_forecasts
     @user.favorites.map do |favorite|
       hash = {}
@@ -22,7 +18,7 @@ class FavoriteLocations
   end
 
   def get_forecast(location)
-    @forecast ||= dark_sky_service.get_forecast_data(lat(location),lng(location))
+    @forecast = dark_sky_service.get_forecast_data(lat(location),lng(location))
   end
   private
 
