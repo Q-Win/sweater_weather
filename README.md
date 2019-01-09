@@ -1,24 +1,5 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Sweater Weather is an API that consumes other APIs. The other APIs it consumes includes Google Maps API and Dark Sky API. In order to use Sweater Weather you will need API keys for both Google and Dark Sky.
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Once you clone the repo to your local machine. Then run bundle. The run rake db:{create, migrate}. After that you can run rails s to host it locally and make calls to the endpoints.
