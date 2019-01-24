@@ -33,3 +33,10 @@ module SweaterWeatherApi
     config.api_only = true
   end
 end
+
+config.middleware.use Rack::Cors do
+   allow do
+     origins '*'
+     resource 'api/jquery', :headers => :any, :methods => [:get, :post]
+   end
+end
