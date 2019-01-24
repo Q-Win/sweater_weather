@@ -31,12 +31,13 @@ module SweaterWeatherApi
     # Middleware like session, flash, cookies can be added back manually.
     # Skip views, helpers and assets when generating a new resource.
     config.api_only = true
-  end
-end
 
-config.middleware.use Rack::Cors do
-   allow do
-     origins '*'
-     resource 'api/jquery', :headers => :any, :methods => [:get, :post]
-   end
+    config.middleware.use Rack::Cors do
+       allow do
+         origins '*'
+         resource 'api/jquery', :headers => :any, :methods => [:get, :post]
+       end
+    end
+
+  end
 end
